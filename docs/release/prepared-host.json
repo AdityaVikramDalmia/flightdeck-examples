@@ -23,9 +23,28 @@
     "python": "3.13.5",
     "git": "2.51.0",
     "jq": "1.7.1-apple",
-    "bash": "3.2.57(1)-release",
+    "bash": "5.3.9(1)-release",
     "perl": "5.34.1",
-    "make": "3.81"
+    "make": "3.81",
+    "runtime_provenance": {
+      "python": {
+        "command": "python3",
+        "resolution": "PATH-resolved Miniconda",
+        "version": "3.13.5"
+      },
+      "bash": {
+        "command": "bash",
+        "resolution": "PATH-resolved Homebrew",
+        "version": "5.3.9(1)-release",
+        "usage": "Bash component suites, syntax checks, examples, and scripts with /usr/bin/env bash"
+      },
+      "system_bash": {
+        "command": "/bin/bash",
+        "resolution": "absolute path",
+        "version": "3.2.57(1)-release",
+        "usage": "Gate Runner --shell commands and the final direct wrappers for the Gate Runner and Agent File Guards example reruns"
+      }
+    }
   },
   "prepared_commits": [
     { "name": "gate-runner", "commit": "587facdaff79fedadd1ea582f30ae5f8282874a2", "clean_before": true, "clean_after": true, "head_unchanged": true },
