@@ -1,6 +1,8 @@
 # Decision Ledger: keep original words distinct from interpretation
 
-Private repository: [flightdeck-decision-ledger](https://github.com/AdityaVikramDalmia/flightdeck-decision-ledger) (authorized access required). Private candidate; redistribution license pending.
+Deprecated reference material for new Claude Code integrations as of 2026-09-22.
+
+Private repository: [flightdeck-decision-ledger](https://github.com/AdityaVikramDalmia/flightdeck-decision-ledger) (authorized access required). Private candidate; Apache-2.0 licensed; public launch deferred.
 
 ## Problem
 

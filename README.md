@@ -1,6 +1,11 @@
 # Flightdeck Examples
 
-Private candidate (redistribution license pending): companion examples for **11 independent tool repositories exposing 13 utilities**. Agent File Guards contributes three commands; each other tool repository contributes one. This repository contains a reproducible composition demo and concise portfolio case studies. It contains no service credentials, remote integration, model calls, or simulated performance claims.
+> **Deprecated for new Claude Code integrations — 2026-09-22.** Retained as an
+> Apache-2.0 reference project. Public launch remains deferred and the repository
+> remains private. This is a maintainer status decision, not a claim that Claude
+> Code replaces every capability. No ongoing feature work or support is promised.
+
+Private candidate (Apache-2.0 licensed; public launch deferred): companion examples for **11 independent tool repositories exposing 13 utilities**. Agent File Guards contributes three commands; each other tool repository contributes one. This repository contains a reproducible composition demo and concise portfolio case studies. It contains no service credentials, remote integration, model calls, or simulated performance claims.
 
 The repositories named below are private. Their GitHub URLs are identifiers for authorized collaborators and should not be presented as public downloads:
 
@@ -91,4 +96,11 @@ The smoke suite runs the complete demo with deliberately conflicting inherited G
 
 The EXIT trap waits for its direct workers and stops only Gate Runner supervisors whose live command names this exact fixture. It then removes the fixture. SIGKILL and machine failure cannot run cleanup traps. Shell Lock coordinates cooperating writers only; preflight checks and health reports are observations, not atomic snapshots.
 
-No license is included. Access and redistribution remain private until the repository owner chooses a license and release policy.
+Licensed under Apache-2.0; see [LICENSE](LICENSE) and [NOTICE](NOTICE). GitHub access remains private until a separate public-launch instruction. The license grants rights to recipients; private visibility controls access and does not add a non-redistribution term.
+
+## License and maintenance
+
+Copyright 2026 Aditya Dalmia. Licensed under [Apache-2.0](LICENSE), with
+[attribution](NOTICE) and [source provenance](PROVENANCE.md). Public launch is
+deferred; repository access remains private. See the [release preparation index](docs/release/README.md),
+[contributing guide](CONTRIBUTING.md), and [security contact](SECURITY.md).

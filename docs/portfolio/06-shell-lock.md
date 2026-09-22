@@ -1,6 +1,8 @@
 # Shell Lock: local serialization around cooperating writers
 
-Private repository: `github.com/AdityaVikramDalmia/flightdeck-shell-lock` (authorized access required). Private candidate; redistribution license pending.
+Deprecated reference material for new Claude Code integrations as of 2026-09-22.
+
+Private repository: `github.com/AdityaVikramDalmia/flightdeck-shell-lock` (authorized access required). Private candidate; Apache-2.0 licensed; public launch deferred.
 
 ## Problem
 

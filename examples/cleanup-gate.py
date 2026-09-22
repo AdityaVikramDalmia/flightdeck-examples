@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Deprecated reference example for new Claude Code integrations (2026-09-22).
 """Stop only detached Gate Runner supervisors owned by this disposable demo."""
 import os
 from pathlib import Path

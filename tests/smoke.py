@@ -29,7 +29,11 @@ class Smoke(unittest.TestCase):
         self.assertEqual(catalog["utility_count"], sum(len(case["tools"]) for case in cases))
         self.assertEqual(catalog["tool_repository_count"], 11)
         self.assertEqual(catalog["utility_count"], 13)
-        self.assertEqual(catalog["license_status"], "pending")
+        self.assertEqual(catalog["license_status"], "Apache-2.0")
+        self.assertTrue((ROOT / "LICENSE").is_file())
+        self.assertTrue((ROOT / "NOTICE").is_file())
+        self.assertEqual(catalog["maintenance_status"], "deprecated")
+        self.assertEqual(catalog["repository_count_including_companion"], len(cases) + 1)
         self.assertEqual(catalog["release_status"], "private-candidate")
         self.assertTrue((ROOT / catalog["integration_demo"]).is_file())
         index = (ROOT / "docs/portfolio/README.md").read_text()
@@ -39,7 +43,8 @@ class Smoke(unittest.TestCase):
             document = ROOT / case["document"]
             self.assertTrue(document.is_file())
             self.assertIn(document.name, index)
-            self.assertIn("license pending", document.read_text())
+            self.assertIn("Apache-2.0", document.read_text())
+            self.assertEqual(case["maintenance_status"], "deprecated")
         self.assertEqual(len(list((ROOT / "docs/portfolio").glob("[0-9][0-9]-*.md"))), len(cases))
 
     def test_artifact_links_and_portability(self):

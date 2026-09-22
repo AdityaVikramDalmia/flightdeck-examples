@@ -13,7 +13,9 @@
       "document": "docs/portfolio/01-gate-runner.md",
       "tools": [
         "gate-run"
-      ]
+      ],
+      "maintenance_status": "deprecated",
+      "deprecation_date": "2026-09-22"
     },
     {
       "id": "durable-mailbox",
@@ -23,7 +25,9 @@
       "document": "docs/portfolio/02-durable-mailbox.md",
       "tools": [
         "mailbox"
-      ]
+      ],
+      "maintenance_status": "deprecated",
+      "deprecation_date": "2026-09-22"
     },
     {
       "id": "session-ledger",
@@ -33,7 +37,9 @@
       "document": "docs/portfolio/03-session-ledger.md",
       "tools": [
         "session-ledger"
-      ]
+      ],
+      "maintenance_status": "deprecated",
+      "deprecation_date": "2026-09-22"
     },
     {
       "id": "agent-file-guards",
@@ -45,7 +51,9 @@
         "untrusted-intake.sh",
         "shrink-guard.sh",
         "nul-lint.sh"
-      ]
+      ],
+      "maintenance_status": "deprecated",
+      "deprecation_date": "2026-09-22"
     },
     {
       "id": "worktree-guard",
@@ -55,7 +63,9 @@
       "document": "docs/portfolio/05-worktree-guard.md",
       "tools": [
         "worktree-guard"
-      ]
+      ],
+      "maintenance_status": "deprecated",
+      "deprecation_date": "2026-09-22"
     },
     {
       "id": "shell-lock",
@@ -65,7 +75,9 @@
       "document": "docs/portfolio/06-shell-lock.md",
       "tools": [
         "shell-lock"
-      ]
+      ],
+      "maintenance_status": "deprecated",
+      "deprecation_date": "2026-09-22"
     },
     {
       "id": "repo-health",
@@ -75,7 +87,9 @@
       "document": "docs/portfolio/07-repo-health.md",
       "tools": [
         "repo-health"
-      ]
+      ],
+      "maintenance_status": "deprecated",
+      "deprecation_date": "2026-09-22"
     },
     {
       "id": "job-heartbeat",
@@ -85,7 +99,9 @@
       "document": "docs/portfolio/08-job-heartbeat.md",
       "tools": [
         "job-heartbeat"
-      ]
+      ],
+      "maintenance_status": "deprecated",
+      "deprecation_date": "2026-09-22"
     },
     {
       "id": "config-baseline",
@@ -95,7 +111,9 @@
       "document": "docs/portfolio/09-config-baseline.md",
       "tools": [
         "config-baseline"
-      ]
+      ],
+      "maintenance_status": "deprecated",
+      "deprecation_date": "2026-09-22"
     },
     {
       "id": "review-receipts",
@@ -105,7 +123,9 @@
       "document": "docs/portfolio/10-review-receipts.md",
       "tools": [
         "review-receipts"
-      ]
+      ],
+      "maintenance_status": "deprecated",
+      "deprecation_date": "2026-09-22"
     },
     {
       "id": "decision-ledger",
@@ -115,11 +135,16 @@
       "document": "docs/portfolio/11-decision-ledger.md",
       "tools": [
         "decision-ledger"
-      ]
+      ],
+      "maintenance_status": "deprecated",
+      "deprecation_date": "2026-09-22"
     }
   ],
   "release_status": "private-candidate",
-  "license_status": "pending",
+  "license_status": "Apache-2.0",
   "tool_repository_count": 11,
-  "utility_count": 13
+  "utility_count": 13,
+  "maintenance_status": "deprecated",
+  "deprecation_date": "2026-09-22",
+  "repository_count_including_companion": 12
 }

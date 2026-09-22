@@ -1,5 +1,7 @@
 # Portfolio case studies
 
+Deprecated reference material for new Claude Code integrations as of 2026-09-22.
+
 These eleven case studies describe observed tool behavior and explicit failure boundaries. Together they cover 11 tool repositories and 13 utilities. Each points to the core workflow or a separate disposable recipe.
 
 1. [Gate Runner: one durable verdict for one code state](01-gate-runner.md)
@@ -15,7 +17,7 @@ These eleven case studies describe observed tool behavior and explicit failure b
 10. [Review Receipts: bind review words to exact selected files](10-review-receipts.md)
 11. [Decision Ledger: keep original words distinct from interpretation](11-decision-ledger.md)
 
-All referenced GitHub repositories are private candidates with redistribution licenses pending. The URLs in this repository identify expected remotes for authorized collaborators; availability is not implied.
+All referenced GitHub repositories are private candidates licensed under Apache-2.0; public launch is deferred. The URLs in this repository identify expected remotes for authorized collaborators; availability is not implied.
 
 Run the six required tools together from the repository root; the seventh health inspection runs when its checkout is present:
 

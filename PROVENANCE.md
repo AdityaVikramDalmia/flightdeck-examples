@@ -18,6 +18,6 @@ Inputs are referenced only by relative checkout name:
 
 The end-to-end scenario is new composition code. It uses only synthetic local state and makes no claims about production impact or performance.
 
-These artifacts are private candidates; redistribution license pending.
+These artifacts are private candidates; Apache-2.0 licensed; public launch deferred.
 
 No private source remote or local user path is recorded here.

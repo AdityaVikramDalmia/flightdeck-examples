@@ -13,7 +13,7 @@ Test cases, grouped regressions, and individual shell assertions are reported
 separately. Four case-insensitive-filesystem tests are exercised on macOS and
 skipped on Linux; they are not silently counted as Linux passes.
 
-Every repository remains private. Redistribution licensing has not been selected.
+Every repository remains private. Apache-2.0 was selected and added on 2026-09-22. The validation below describes the original extraction commits; subsequent preparation has separate receipts under docs/release/.
 The full original agent runtime, private infrastructure, source Git history,
 personal transcripts, project roster, and operational ledgers are outside this
 distribution. No portfolio site deployment or public visibility change was made.
@@ -27,3 +27,7 @@ none of the receipts certify semantic correctness or authenticate a reviewer.
 Individual tool repositories contain manual GitHub workflows. They do not run on
 push, and no cloud workflow was dispatched during preparation. Local validation
 uses the [documented harness](validation/README.md).
+
+All twelve repositories are deprecated reference projects for new Claude Code
+integrations as of 2026-09-22. This maintainer choice does not claim that native
+Claude Code features replace every utility. See [release preparation](docs/release/README.md).

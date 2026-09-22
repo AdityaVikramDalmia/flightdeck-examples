@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Deprecated reference example for new Claude Code integrations (2026-09-22).
 # Compose all six tools against one disposable local fixture. No network or AI process is used.
 set -euo pipefail
 

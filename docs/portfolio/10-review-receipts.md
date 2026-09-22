@@ -1,6 +1,8 @@
 # Review Receipts: bind review words to exact selected files
 
-Private repository: [flightdeck-review-receipts](https://github.com/AdityaVikramDalmia/flightdeck-review-receipts) (authorized access required). Private candidate; redistribution license pending.
+Deprecated reference material for new Claude Code integrations as of 2026-09-22.
+
+Private repository: [flightdeck-review-receipts](https://github.com/AdityaVikramDalmia/flightdeck-review-receipts) (authorized access required). Private candidate; Apache-2.0 licensed; public launch deferred.
 
 ## Problem
 
