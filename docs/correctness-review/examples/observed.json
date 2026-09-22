@@ -1,0 +1,23 @@
+{
+  "examples_revision": "82a1c018410cc9c0c745296119c7137cc2787f45",
+  "E1_live_failure": {
+    "operation": "live",
+    "exit_code": 0,
+    "failure_injected": true,
+    "printed_pass": true,
+    "fixture_removed": true
+  },
+  "E1_validate_failure_control": {
+    "operation": "validate",
+    "exit_code": 1,
+    "failure_injected": true,
+    "printed_pass": false,
+    "fixture_removed": true
+  },
+  "E2_cleanup_identity": {
+    "cleanup_exit": 0,
+    "decoy_exit": -15,
+    "decoy_is_supervisor": false,
+    "neighbor_control_alive": true
+  }
+}

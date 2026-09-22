@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-22T09:47:54.752290+00:00",
+  "review_kind": "independent correctness boundary review",
+  "scope": {
+    "standalone_projects": 11,
+    "tools": 13,
+    "repositories_with_examples": 12,
+    "visibility": "private (owner instruction and existing receipt; no remote access)",
+    "license": "Apache-2.0 locally",
+    "maintenance": "deprecated for new Claude Code integrations",
+    "network_access": false,
+    "original_runtime_access": false,
+    "live_ledgers_or_credentials_access": false,
+    "stratprime_access": false
+  },
+  "platform": {
+    "system": "Darwin",
+    "release": "25.2.0",
+    "machine": "arm64",
+    "python": "3.14.6",
+    "git": "git version 2.51.0"
+  },
+  "release_inputs_sha256": {
+    "README.md": "1f54560e718d1cd8468a6af20babb33a373f5840afff07c1a719f0b545af2b61",
+    "prepared-host.json": "fe91e3bc2e3fc282adc43c7879fae59a11f97be522f510dacf91953cbf3b61de",
+    "prepared-linux.json": "eab3715665c369d6bd267d4d30e627e3ce275b27ab26bce40f6def89c1c13ac5",
+    "prepared-repositories.json": "b4fcbe1de6e4b2c89478d1b1d0e7b3a19faded3d89b5a8f6baf66a31ca8d0dd3"
+  },
+  "repositories": [
+    {
+      "repository": "gate-runner",
+      "reviewed_commit": "587facdaff79fedadd1ea582f30ae5f8282874a2",
+      "prepared_commit": "587facdaff79fedadd1ea582f30ae5f8282874a2",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "durable-mailbox",
+      "reviewed_commit": "71604edb98abbd0d078eda1e48305aa9961beef4",
+      "prepared_commit": "71604edb98abbd0d078eda1e48305aa9961beef4",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "session-ledger",
+      "reviewed_commit": "f7ffb390974ed125de9917b6d83184a823dc0bbd",
+      "prepared_commit": "f7ffb390974ed125de9917b6d83184a823dc0bbd",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "agent-file-guards",
+      "reviewed_commit": "7a83c380f1228a6978359723593443e50867fd04",
+      "prepared_commit": "7a83c380f1228a6978359723593443e50867fd04",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "worktree-guard",
+      "reviewed_commit": "1efffa22329822d3cff063b9706a967b04229460",
+      "prepared_commit": "1efffa22329822d3cff063b9706a967b04229460",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "shell-lock",
+      "reviewed_commit": "1691f1b91b233a679b53277e035bcc20d82d3ef5",
+      "prepared_commit": "1691f1b91b233a679b53277e035bcc20d82d3ef5",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "repo-health",
+      "reviewed_commit": "f0c983339a927fedff397d6fc827749a203ee315",
+      "prepared_commit": "f0c983339a927fedff397d6fc827749a203ee315",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "job-heartbeat",
+      "reviewed_commit": "b7b6fc619b12ecf9f6e19432f4404cad14c53967",
+      "prepared_commit": "b7b6fc619b12ecf9f6e19432f4404cad14c53967",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "config-baseline",
+      "reviewed_commit": "1fb79c714a02afe139202cd38fc0160e71eec8b8",
+      "prepared_commit": "1fb79c714a02afe139202cd38fc0160e71eec8b8",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "review-receipts",
+      "reviewed_commit": "135c0f13b38b478a68bb051869c6c6ab99613f14",
+      "prepared_commit": "135c0f13b38b478a68bb051869c6c6ab99613f14",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "decision-ledger",
+      "reviewed_commit": "e6d51e42d937a333e55637a27a32793478bfadff",
+      "prepared_commit": "e6d51e42d937a333e55637a27a32793478bfadff",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "flightdeck-examples",
+      "reviewed_commit": "82a1c018410cc9c0c745296119c7137cc2787f45",
+      "prepared_commit": "3c6909d0b291218c442eb610f8792c5bce063147",
+      "initial_branch": "main",
+      "initial_porcelain": "",
+      "local_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ]
+}
