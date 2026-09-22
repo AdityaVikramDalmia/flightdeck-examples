@@ -46,8 +46,8 @@ cleanup() {
   for pid in $pids; do kill -TERM "$pid" 2>/dev/null || :; done
   for pid in $pids; do wait "$pid" 2>/dev/null || :; done
   # Gate Runner detaches its supervisor. On interruption, terminate only a
-  # supervisor whose live argv names an attempt inside this exact fixture.
-  python3 "$script_dir/cleanup-gate.py" "$fixture" || return 1
+  # recorded supervisor whose complete live invocation matches this fixture.
+  python3 "$script_dir/cleanup-gate.py" "$fixture" "$tools_root/gate-runner/gate_runner/cli.py" || return 1
   rm -rf -- "$fixture"
 }
 trap cleanup EXIT
@@ -224,6 +224,7 @@ printf '[7/7] finish and validate the lifecycle record\n'
 "$LEDGER" --dir "$ledger_dir" history demo-session | jq -se --arg attempt "$gate_attempt" '
   length == 2 and .[0].event == "launched" and .[1].event == "finished" and .[1].gate_attempt == $attempt
 ' >/dev/null || die "ledger history lost lifecycle or gate evidence"
-[ -z "$("$LEDGER" --dir "$ledger_dir" live)" ] || die "finished session remains live"
+live_sessions=$("$LEDGER" --dir "$ledger_dir" live) || die "ledger live query failed"
+[ -z "$live_sessions" ] || die "finished session remains live"
 
 printf 'PASS: six repositories composed in one isolated local workflow\n'

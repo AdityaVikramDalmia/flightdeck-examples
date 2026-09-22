@@ -7,6 +7,7 @@ import re
 import shlex
 import signal
 import subprocess
+import sys
 import tempfile
 import time
 import unittest
@@ -123,6 +124,88 @@ class Smoke(unittest.TestCase):
             self.assertIn("required executable is missing", result.stderr)
             self.assertEqual(list(Path(temporary).iterdir()), [])
 
+    def test_final_ledger_query_checks_status_and_output(self):
+        for operation, status, output in (("live", 75, ""), ("validate", 75, ""),
+                                          ("live", 0, "unexpected-live-session")):
+            with self.subTest(operation=operation, status=status), tempfile.TemporaryDirectory(prefix="example ledger failure ") as temporary:
+                scratch = Path(temporary).resolve()
+                home = scratch / "home"
+                home.mkdir()
+                layout = scratch / "tools"
+                layout.mkdir()
+                for name in TOOL_NAMES:
+                    if name != "session-ledger":
+                        (layout / name).symlink_to(TOOLS / name, target_is_directory=True)
+                wrapper = layout / "session-ledger/bin/session-ledger"
+                wrapper.parent.mkdir(parents=True)
+                wrapper.write_text("#!/bin/sh\n" +
+                                   f'if [ "$3" = {shlex.quote(operation)} ]; then\n' +
+                                   "  echo 'synthetic ledger query injection' >&2\n" +
+                                   f"  printf '%s' {shlex.quote(output)}\n  exit {status}\nfi\n" +
+                                   "exec " + shlex.quote(str(TOOLS / "session-ledger/bin/session-ledger")) + ' "$@"\n')
+                wrapper.chmod(0o755)
+                result = subprocess.run(["bash", str(DEMO), "--tools-root", str(layout)],
+                                        env={"PATH": os.environ["PATH"], "HOME": str(home), "TMPDIR": str(scratch),
+                                             "LANG": "C", "PYTHONDONTWRITEBYTECODE": "1"},
+                                        text=True, capture_output=True, timeout=60)
+                self.assertIn("synthetic ledger query injection", result.stderr)
+                self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+                self.assertNotIn("PASS: six repositories composed", result.stdout)
+                self.assertFalse(list(scratch.glob("flightdeck-example.*")))
+
+    def test_cleanup_preserves_diagnostic_decoys(self):
+        with tempfile.TemporaryDirectory(prefix="example cleanup identity ") as temporary:
+            scratch = Path(temporary).resolve()
+            fixture = scratch / "flightdeck-example.identity"
+            fixture.mkdir()
+            home = scratch / "home"
+            home.mkdir()
+            env = {"PATH": os.environ["PATH"], "HOME": str(home), "TMPDIR": str(scratch),
+                   "LANG": "C", "PYTHONDONTWRITEBYTECODE": "1"}
+            attempt = fixture / "main project/.git/gate-runner/runs/fixture/attempts/one"
+            gate_script = (TOOLS / "gate-runner/gate_runner/cli.py").resolve()
+            processes = []
+            try:
+                for label, argument in (("decoy", "diagnostic: _supervise " + str(attempt)),
+                                        ("neighbor", "diagnostic: _supervise " + str(attempt).replace("identity/", "identity-neighbor/"))):
+                    ready = scratch / (label + ".ready")
+                    code = "from pathlib import Path; import sys,time; Path(sys.argv[1]).touch(); time.sleep(30)"
+                    processes.append(subprocess.Popen([sys.executable, "-c", code, str(ready), argument],
+                                                       env=env, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL))
+                deadline = time.monotonic() + 5
+                while not all((scratch / (label + ".ready")).exists() for label in ("decoy", "neighbor")):
+                    self.assertLess(time.monotonic(), deadline, "fixture children did not start")
+                    time.sleep(0.01)
+                cleanup = [sys.executable, str(ROOT / "examples/cleanup-gate.py"), str(fixture), str(gate_script)]
+                result = subprocess.run(cleanup, env=env, text=True, capture_output=True, timeout=10)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                self.assertTrue(all(proc.poll() is None for proc in processes))
+                # Even a stale record naming the decoy PID cannot authorize a
+                # signal when the complete interpreter/script/arguments differ.
+                attempt.mkdir(parents=True)
+                (attempt / "meta.json").write_text(json.dumps({"supervisor_pid": processes[0].pid}))
+                result = subprocess.run(cleanup, env=env, text=True, capture_output=True, timeout=10)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("retaining fixture", result.stderr)
+                self.assertTrue(all(proc.poll() is None for proc in processes))
+            finally:
+                for proc in processes:
+                    if proc.poll() is None:
+                        proc.terminate()
+                    proc.wait(timeout=5)
+
+    def test_cleanup_retains_attempt_without_supervisor_identity(self):
+        with tempfile.TemporaryDirectory(prefix="example startup identity ") as temporary:
+            fixture = Path(temporary) / "flightdeck-example.startup"
+            metadata = fixture / "main project/.git/gate-runner/runs/fixture/attempts/one/meta.json"
+            metadata.parent.mkdir(parents=True)
+            metadata.write_text(json.dumps({"starter_pid": os.getpid()}))
+            result = subprocess.run([sys.executable, str(ROOT / "examples/cleanup-gate.py"), str(fixture)],
+                                    text=True, capture_output=True, timeout=10)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("retaining fixture", result.stderr)
+            self.assertTrue(metadata.is_file())
+
     def test_interruption_reaps_detached_gate(self):
         with tempfile.TemporaryDirectory(prefix="example signal ") as temporary:
             scratch = Path(temporary)
@@ -132,6 +215,7 @@ class Smoke(unittest.TestCase):
                 (tools / name).symlink_to(TOOLS / name, target_is_directory=True)
             binary = tools / "gate-runner/bin/gate-run"
             binary.parent.mkdir(parents=True)
+            (binary.parent.parent / "gate_runner").symlink_to(TOOLS / "gate-runner/gate_runner", target_is_directory=True)
             binary.write_text("#!/bin/sh\nexec " + shlex.quote(str(TOOLS / "gate-runner/bin/gate-run")) +
                               " --json start --wait -- sh -c 'sleep 30; make test'\n")
             binary.chmod(0o755)
