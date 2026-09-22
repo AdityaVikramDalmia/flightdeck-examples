@@ -1,0 +1,215 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-22T10:53:58.444613+00:00",
+  "scope": "tracked candidate distribution filenames and UTF-8 text; focused patterns, not proof of absence of all private data",
+  "repositories": [
+    {
+      "name": "agent-file-guards",
+      "tracked_file_count": 30,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 0,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "config-baseline",
+      "tracked_file_count": 22,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 2,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "decision-ledger",
+      "tracked_file_count": 23,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 2,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "durable-mailbox",
+      "tracked_file_count": 25,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 0,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "flightdeck-examples",
+      "tracked_file_count": 75,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [
+          "docs/correctness-review/README.md",
+          "docs/correctness-review/coordination/README.md",
+          "docs/correctness-review/revisions.json"
+        ],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 0,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "gate-runner",
+      "tracked_file_count": 24,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 2,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "job-heartbeat",
+      "tracked_file_count": 23,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 2,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "repo-health",
+      "tracked_file_count": 22,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 2,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "review-receipts",
+      "tracked_file_count": 23,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 2,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "session-ledger",
+      "tracked_file_count": 25,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 0,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "shell-lock",
+      "tracked_file_count": 21,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 2,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "worktree-guard",
+      "tracked_file_count": 22,
+      "tracked_symlinks": 0,
+      "gitlinks": 0,
+      "pattern_matching_paths": {
+        "personal_absolute_path": [],
+        "private_network_endpoint": [],
+        "private_project_reference": [],
+        "runtime_artifact_filename": [],
+        "vendored_tree": []
+      },
+      "untracked_file_count": 0,
+      "ignored_file_count": 1,
+      "ignored_files_are_python_bytecode": true,
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ]
+}

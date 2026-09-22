@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-22T10:51:56.132899+00:00",
+  "scope": "initial audit of twelve local main checkouts and read-only GitHub metadata; final execution revisions recorded separately",
+  "gh_version": "gh version 2.92.0 (2026-04-28)",
+  "repositories": [
+    {
+      "name": "agent-file-guards",
+      "local_commit": "7a83c380f1228a6978359723593443e50867fd04",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-agent-file-guards.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-agent-file-guards",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-agent-file-guards"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 30,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/agent-file-guards-maintainer/SKILL.md"
+    },
+    {
+      "name": "config-baseline",
+      "local_commit": "1fb79c714a02afe139202cd38fc0160e71eec8b8",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-config-baseline.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-config-baseline",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-config-baseline"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 22,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/config-baseline-maintainer/SKILL.md"
+    },
+    {
+      "name": "decision-ledger",
+      "local_commit": "e6d51e42d937a333e55637a27a32793478bfadff",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-decision-ledger.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-decision-ledger",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-decision-ledger"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 23,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/decision-ledger-maintainer/SKILL.md"
+    },
+    {
+      "name": "durable-mailbox",
+      "local_commit": "71604edb98abbd0d078eda1e48305aa9961beef4",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-durable-mailbox.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-durable-mailbox",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-durable-mailbox"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 25,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/durable-mailbox-maintainer/SKILL.md"
+    },
+    {
+      "name": "flightdeck-examples",
+      "local_commit": "6ad9597e5ed481e4efaf0f89cd0b59aafac3c7db",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-examples.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-examples",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-examples"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 75,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/flightdeck-examples-maintainer/SKILL.md"
+    },
+    {
+      "name": "gate-runner",
+      "local_commit": "587facdaff79fedadd1ea582f30ae5f8282874a2",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-gate-runner.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-gate-runner",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-gate-runner"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 24,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/gate-runner-maintainer/SKILL.md"
+    },
+    {
+      "name": "job-heartbeat",
+      "local_commit": "b7b6fc619b12ecf9f6e19432f4404cad14c53967",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-job-heartbeat.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-job-heartbeat",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-job-heartbeat"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 23,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/job-heartbeat-maintainer/SKILL.md"
+    },
+    {
+      "name": "repo-health",
+      "local_commit": "f0c983339a927fedff397d6fc827749a203ee315",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-repo-health.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-repo-health",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-repo-health"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 22,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/repo-health-maintainer/SKILL.md"
+    },
+    {
+      "name": "review-receipts",
+      "local_commit": "135c0f13b38b478a68bb051869c6c6ab99613f14",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-review-receipts.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-review-receipts",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-review-receipts"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 23,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/review-receipts-maintainer/SKILL.md"
+    },
+    {
+      "name": "session-ledger",
+      "local_commit": "f7ffb390974ed125de9917b6d83184a823dc0bbd",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-session-ledger.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-session-ledger",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-session-ledger"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 25,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/session-ledger-maintainer/SKILL.md"
+    },
+    {
+      "name": "shell-lock",
+      "local_commit": "1691f1b91b233a679b53277e035bcc20d82d3ef5",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-shell-lock.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-shell-lock",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-shell-lock"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 21,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/shell-lock-maintainer/SKILL.md"
+    },
+    {
+      "name": "worktree-guard",
+      "local_commit": "1efffa22329822d3cff063b9706a967b04229460",
+      "origin_url": "https://github.com/AdityaVikramDalmia/flightdeck-worktree-guard.git",
+      "clean_checkout": true,
+      "github_read_exit": 0,
+      "github": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "isPrivate": true,
+        "licenseInfo": null,
+        "nameWithOwner": "AdityaVikramDalmia/flightdeck-worktree-guard",
+        "url": "https://github.com/AdityaVikramDalmia/flightdeck-worktree-guard"
+      },
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tracked_files": 22,
+      "readme_private": true,
+      "readme_deprecated_20260922": true,
+      "notice_copyright": true,
+      "maintenance_skill": ".agents/skills/worktree-guard-maintainer/SKILL.md"
+    }
+  ]
+}

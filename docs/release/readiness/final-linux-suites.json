@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-22T11:05:09.249934+00:00",
+  "platform": "linux",
+  "versions": {
+    "host_system": "Darwin",
+    "host_machine": "arm64",
+    "python": "3.14.6",
+    "image": {
+      "exit_code": 0,
+      "stdout": "sha256:95e1569a6674da61e3251c1f441edc5dc69699721a441250bd6fd6f1082bb7f7",
+      "stderr": ""
+    },
+    "container_tools": {
+      "exit_code": 0,
+      "stdout": "Python 3.14.7\ngit version 2.54.0\njq-1.8.2\nGNU bash, version 5.3.9(1)-release (aarch64-alpine-linux-musl)\nPerl v5.42.2",
+      "stderr": ""
+    }
+  },
+  "results": [
+    {
+      "component": "gate-runner",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 43,
+      "seconds": 20.081,
+      "skipped": 0,
+      "commit": "43583e250f84e273403dd3eb434a345d43e67edc",
+      "clean_checkout": true,
+      "units": "unittest cases"
+    },
+    {
+      "component": "durable-mailbox",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 18,
+      "seconds": 2.024,
+      "skipped": 0,
+      "commit": "71604edb98abbd0d078eda1e48305aa9961beef4",
+      "clean_checkout": true,
+      "units": "grouped regression cases"
+    },
+    {
+      "component": "session-ledger",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 19,
+      "seconds": 2.928,
+      "skipped": 0,
+      "commit": "f7ffb390974ed125de9917b6d83184a823dc0bbd",
+      "clean_checkout": true,
+      "units": "grouped regression cases"
+    },
+    {
+      "component": "agent-file-guards",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 111,
+      "seconds": 1.805,
+      "skipped": 0,
+      "commit": "7a83c380f1228a6978359723593443e50867fd04",
+      "clean_checkout": true,
+      "units": "shell assertions"
+    },
+    {
+      "component": "worktree-guard",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 42,
+      "seconds": 4.131,
+      "skipped": 0,
+      "commit": "1efffa22329822d3cff063b9706a967b04229460",
+      "clean_checkout": true,
+      "units": "unittest cases"
+    },
+    {
+      "component": "shell-lock",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 24,
+      "seconds": 4.083,
+      "skipped": 0,
+      "commit": "1691f1b91b233a679b53277e035bcc20d82d3ef5",
+      "clean_checkout": true,
+      "units": "unittest cases"
+    },
+    {
+      "component": "repo-health",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 43,
+      "seconds": 8.156,
+      "skipped": 0,
+      "commit": "f0c983339a927fedff397d6fc827749a203ee315",
+      "clean_checkout": true,
+      "units": "unittest cases"
+    },
+    {
+      "component": "config-baseline",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 33,
+      "seconds": 4.176,
+      "skipped": 2,
+      "commit": "1fb79c714a02afe139202cd38fc0160e71eec8b8",
+      "clean_checkout": true,
+      "units": "unittest cases"
+    },
+    {
+      "component": "job-heartbeat",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 25,
+      "seconds": 6.356,
+      "skipped": 0,
+      "commit": "b7b6fc619b12ecf9f6e19432f4404cad14c53967",
+      "clean_checkout": true,
+      "units": "unittest cases"
+    },
+    {
+      "component": "decision-ledger",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 32,
+      "seconds": 11.019,
+      "skipped": 0,
+      "commit": "e6d51e42d937a333e55637a27a32793478bfadff",
+      "clean_checkout": true,
+      "units": "unittest cases"
+    },
+    {
+      "component": "review-receipts",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 32,
+      "seconds": 4.862,
+      "skipped": 2,
+      "commit": "135c0f13b38b478a68bb051869c6c6ab99613f14",
+      "clean_checkout": true,
+      "units": "unittest cases"
+    }
+  ],
+  "all_passed": true,
+  "evidence_kind": "fresh-local-clone-corrected-candidate",
+  "runner_exit_code": 0,
+  "host_runtime_selection": {
+    "python_executable_version": "3.14.6",
+    "bash_resolved_version": "GNU bash, version 5.3.9(1)-release (aarch64-apple-darwin25.1.0)"
+  }
+}

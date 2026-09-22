@@ -1,0 +1,259 @@
+{
+  "results": [
+    {
+      "component": "agent-file-guards",
+      "kind": "install",
+      "command": "make install PREFIX=<disposable prefix with spaces>",
+      "exit_code": 0,
+      "seconds": 0.055
+    },
+    {
+      "component": "agent-file-guards",
+      "kind": "installed_help",
+      "command": "shrink-guard --help from disposable prefix",
+      "exit_code": 0,
+      "seconds": 0.281
+    },
+    {
+      "component": "agent-file-guards",
+      "kind": "installed_help",
+      "command": "nul-lint --help from disposable prefix",
+      "exit_code": 0,
+      "seconds": 0.164
+    },
+    {
+      "component": "agent-file-guards",
+      "kind": "installed_help",
+      "command": "untrusted-intake --help from disposable prefix",
+      "exit_code": 0,
+      "seconds": 0.167
+    },
+    {
+      "component": "agent-file-guards",
+      "kind": "demo",
+      "command": "bash examples/guarded-write.sh <synthetic report>",
+      "exit_code": 0,
+      "seconds": 0.209
+    },
+    {
+      "component": "agent-file-guards",
+      "kind": "demo",
+      "command": "bash examples/pre-commit in staged synthetic repository",
+      "exit_code": 0,
+      "seconds": 0.32
+    },
+    {
+      "component": "config-baseline",
+      "kind": "install",
+      "command": "make install PREFIX=<disposable prefix with spaces>",
+      "exit_code": 0,
+      "seconds": 0.028
+    },
+    {
+      "component": "config-baseline",
+      "kind": "installed_help",
+      "command": "config-baseline --help from disposable prefix",
+      "exit_code": 0,
+      "seconds": 0.215
+    },
+    {
+      "component": "config-baseline",
+      "kind": "demo",
+      "command": "bash examples/demo.sh",
+      "exit_code": 0,
+      "seconds": 0.207
+    },
+    {
+      "component": "decision-ledger",
+      "kind": "install",
+      "command": "make install PREFIX=<disposable prefix with spaces>",
+      "exit_code": 0,
+      "seconds": 0.03
+    },
+    {
+      "component": "decision-ledger",
+      "kind": "installed_help",
+      "command": "decision-ledger --help from disposable prefix",
+      "exit_code": 0,
+      "seconds": 0.226
+    },
+    {
+      "component": "decision-ledger",
+      "kind": "demo",
+      "command": "bash examples/roundtrip.sh",
+      "exit_code": 0,
+      "seconds": 0.803
+    },
+    {
+      "component": "durable-mailbox",
+      "kind": "install",
+      "command": "README adjacent bin/lib copy in disposable prefix; installed command --help",
+      "exit_code": 0,
+      "seconds": 0.191
+    },
+    {
+      "component": "durable-mailbox",
+      "kind": "demo",
+      "command": "bash examples/roundtrip.sh",
+      "exit_code": 0,
+      "seconds": 0.241
+    },
+    {
+      "component": "gate-runner",
+      "kind": "install",
+      "command": "README complete bin/module copy + symlink in disposable prefix; gate-run --version",
+      "exit_code": 0,
+      "seconds": 0.255
+    },
+    {
+      "component": "gate-runner",
+      "kind": "demo",
+      "command": "examples/README.md start/join/wait/log/count and three distinct input keys",
+      "exit_code": 0,
+      "seconds": 2.768
+    },
+    {
+      "component": "job-heartbeat",
+      "kind": "install",
+      "command": "make install PREFIX=<disposable prefix with spaces>",
+      "exit_code": 0,
+      "seconds": 0.029
+    },
+    {
+      "component": "job-heartbeat",
+      "kind": "installed_help",
+      "command": "job-heartbeat --help from disposable prefix",
+      "exit_code": 0,
+      "seconds": 0.258
+    },
+    {
+      "component": "job-heartbeat",
+      "kind": "demo",
+      "command": "bash examples/demo.sh",
+      "exit_code": 0,
+      "seconds": 0.494
+    },
+    {
+      "component": "repo-health",
+      "kind": "install",
+      "command": "make install PREFIX=<disposable prefix with spaces>",
+      "exit_code": 0,
+      "seconds": 0.034
+    },
+    {
+      "component": "repo-health",
+      "kind": "installed_help",
+      "command": "repo-health --help from disposable prefix",
+      "exit_code": 0,
+      "seconds": 0.225
+    },
+    {
+      "component": "repo-health",
+      "kind": "demo",
+      "command": "bash examples/demo.sh",
+      "exit_code": 0,
+      "seconds": 0.974
+    },
+    {
+      "component": "review-receipts",
+      "kind": "install",
+      "command": "make install PREFIX=<disposable prefix with spaces>",
+      "exit_code": 0,
+      "seconds": 0.033
+    },
+    {
+      "component": "review-receipts",
+      "kind": "installed_help",
+      "command": "review-receipts --help from disposable prefix",
+      "exit_code": 0,
+      "seconds": 0.338
+    },
+    {
+      "component": "review-receipts",
+      "kind": "demo",
+      "command": "bash examples/demo.sh",
+      "exit_code": 0,
+      "seconds": 0.275
+    },
+    {
+      "component": "session-ledger",
+      "kind": "install",
+      "command": "README adjacent bin/lib copy in disposable prefix; installed command --help",
+      "exit_code": 0,
+      "seconds": 0.204
+    },
+    {
+      "component": "session-ledger",
+      "kind": "demo",
+      "command": "bash examples/lifecycle.sh",
+      "exit_code": 0,
+      "seconds": 0.407
+    },
+    {
+      "component": "shell-lock",
+      "kind": "install",
+      "command": "make install PREFIX=<disposable prefix with spaces>",
+      "exit_code": 0,
+      "seconds": 0.034
+    },
+    {
+      "component": "shell-lock",
+      "kind": "installed_help",
+      "command": "shell-lock --help from disposable prefix",
+      "exit_code": 0,
+      "seconds": 0.221
+    },
+    {
+      "component": "shell-lock",
+      "kind": "demo",
+      "command": "bash examples/demo.sh",
+      "exit_code": 0,
+      "seconds": 0.7
+    },
+    {
+      "component": "worktree-guard",
+      "kind": "install",
+      "command": "make install PREFIX=<disposable prefix with spaces>",
+      "exit_code": 0,
+      "seconds": 0.03
+    },
+    {
+      "component": "worktree-guard",
+      "kind": "installed_help",
+      "command": "worktree-guard --help from disposable prefix",
+      "exit_code": 0,
+      "seconds": 0.225
+    },
+    {
+      "component": "worktree-guard",
+      "kind": "demo",
+      "command": "bash examples/demo.sh",
+      "exit_code": 0,
+      "seconds": 0.641
+    },
+    {
+      "component": "flightdeck-examples",
+      "kind": "smoke",
+      "command": "make test (includes E1/E2 regressions and four recipes)",
+      "exit_code": 0,
+      "seconds": 27.898,
+      "count": 10,
+      "units": "smoke unittest cases"
+    },
+    {
+      "component": "flightdeck-examples",
+      "kind": "core_demo",
+      "command": "make demo",
+      "exit_code": 0,
+      "seconds": 3.267,
+      "count": 7,
+      "units": "demo stages"
+    }
+  ],
+  "all_passed": true,
+  "schema": 1,
+  "recorded_at": "2026-09-22T11:05:51.832004+00:00",
+  "platform": "host",
+  "driver_exit_code": 0,
+  "evidence_kind": "fresh-local-clone-installation-examples-companion"
+}

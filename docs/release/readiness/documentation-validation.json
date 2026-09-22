@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-22T11:07:53.138158+00:00",
+  "scope": "new audit docs in release-audit worktree atop fixed Examples 1ff8fea; full candidate make test/demo already ran on fresh clones",
+  "command": "Smoke.test_catalog_and_documents + Smoke.test_artifact_links_and_portability",
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "all_passed": true
+}
