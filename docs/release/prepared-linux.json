@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-22T09:15:02.290168+00:00",
+  "evidence_kind": "prepared-local-snapshot-linux",
+  "evidence_scope": {
+    "prepared_source": true,
+    "historical_extraction_receipt": false,
+    "snapshot_method": "fresh local clones checked out detached at the prepared commits",
+    "remote_access": false,
+    "all_snapshot_checkouts_clean": true
+  },
+  "isolation": {
+    "network": "none",
+    "root_filesystem": "read-only",
+    "source_snapshot": "read-only bind mount",
+    "temporary_filesystem": "writable executable tmpfs",
+    "container_uid": 1000
+  },
+  "image": {
+    "id": "sha256:95e1569a6674da61e3251c1f441edc5dc69699721a441250bd6fd6f1082bb7f7",
+    "python": "3.14.7",
+    "git": "2.54.0",
+    "jq": "1.8.2",
+    "bash": "5.3.9",
+    "perl": "5.42.2"
+  },
+  "prepared_commits": [
+    { "name": "gate-runner", "commit": "587facdaff79fedadd1ea582f30ae5f8282874a2" },
+    { "name": "durable-mailbox", "commit": "71604edb98abbd0d078eda1e48305aa9961beef4" },
+    { "name": "session-ledger", "commit": "f7ffb390974ed125de9917b6d83184a823dc0bbd" },
+    { "name": "agent-file-guards", "commit": "7a83c380f1228a6978359723593443e50867fd04" },
+    { "name": "worktree-guard", "commit": "1efffa22329822d3cff063b9706a967b04229460" },
+    { "name": "shell-lock", "commit": "1691f1b91b233a679b53277e035bcc20d82d3ef5" },
+    { "name": "repo-health", "commit": "f0c983339a927fedff397d6fc827749a203ee315" },
+    { "name": "job-heartbeat", "commit": "b7b6fc619b12ecf9f6e19432f4404cad14c53967" },
+    { "name": "config-baseline", "commit": "1fb79c714a02afe139202cd38fc0160e71eec8b8" },
+    { "name": "review-receipts", "commit": "135c0f13b38b478a68bb051869c6c6ab99613f14" },
+    { "name": "decision-ledger", "commit": "e6d51e42d937a333e55637a27a32793478bfadff" },
+    { "name": "flightdeck-examples", "commit": "3c6909d0b291218c442eb610f8792c5bce063147" }
+  ],
+  "component_suites": {
+    "command": "validation/run.py --platform linux --tools-root <prepared-local-snapshot> --image flightdeck-validation:local",
+    "exit_code": 0,
+    "all_passed": true,
+    "results": [
+      { "component": "gate-runner", "exit_code": 0, "checks_or_groups": 41, "skipped": 0, "seconds": 22.224, "clean_checkout": true },
+      { "component": "durable-mailbox", "exit_code": 0, "checks_or_groups": 18, "skipped": 0, "seconds": 1.837, "clean_checkout": true },
+      { "component": "session-ledger", "exit_code": 0, "checks_or_groups": 19, "skipped": 0, "seconds": 2.82, "clean_checkout": true },
+      { "component": "agent-file-guards", "exit_code": 0, "checks_or_groups": 111, "skipped": 0, "seconds": 1.922, "clean_checkout": true },
+      { "component": "worktree-guard", "exit_code": 0, "checks_or_groups": 42, "skipped": 0, "seconds": 4.311, "clean_checkout": true },
+      { "component": "shell-lock", "exit_code": 0, "checks_or_groups": 24, "skipped": 0, "seconds": 4.52, "clean_checkout": true },
+      { "component": "repo-health", "exit_code": 0, "checks_or_groups": 43, "skipped": 0, "seconds": 8.369, "clean_checkout": true },
+      { "component": "config-baseline", "exit_code": 0, "checks_or_groups": 33, "skipped": 2, "seconds": 4.397, "clean_checkout": true },
+      { "component": "job-heartbeat", "exit_code": 0, "checks_or_groups": 25, "skipped": 0, "seconds": 5.153, "clean_checkout": true },
+      { "component": "decision-ledger", "exit_code": 0, "checks_or_groups": 32, "skipped": 0, "seconds": 9.0, "clean_checkout": true },
+      { "component": "review-receipts", "exit_code": 0, "checks_or_groups": 32, "skipped": 2, "seconds": 6.859, "clean_checkout": true }
+    ]
+  },
+  "companion_workflow": {
+    "snapshot_commit": "3c6909d0b291218c442eb610f8792c5bce063147",
+    "single_snapshot_container": true,
+    "commands": [
+      { "name": "companion_make_test", "command": "make test", "exit_code": 0, "units": "7 smoke tests", "skipped": 0 },
+      { "name": "companion_core_demo", "command": "make demo", "exit_code": 0, "units": "7-stage core demo", "skipped": 0 },
+      { "name": "heartbeat_recipe", "command": "bash examples/heartbeat-recipe.sh", "exit_code": 0, "units": "recipe", "skipped": 0 },
+      { "name": "config_baseline_recipe", "command": "bash examples/config-baseline-recipe.sh", "exit_code": 0, "units": "recipe", "skipped": 0 },
+      { "name": "review_receipts_recipe", "command": "bash examples/review-receipts-recipe.sh", "exit_code": 0, "units": "recipe", "skipped": 0 },
+      { "name": "decision_ledger_recipe", "command": "bash examples/decision-ledger-recipe.sh", "exit_code": 0, "units": "recipe", "skipped": 0 }
+    ]
+  }
+}

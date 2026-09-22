@@ -2,6 +2,10 @@
 
 ## Recorded candidate evidence
 
+This directory preserves the original extraction evidence. For the owner-selected
+Apache-2.0/deprecation preparation and its exact tested revisions, see the
+[current release record](../docs/release/README.md).
+
 | Receipt | Scope |
 |---|---|
 | [component-commits.json](component-commits.json) | Exact clean commits for all eleven tool repositories |

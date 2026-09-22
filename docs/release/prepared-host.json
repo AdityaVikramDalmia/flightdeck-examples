@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-22T09:23:19Z",
+  "evidence_kind": "prepared-local-clone-macos",
+  "evidence_scope": {
+    "prepared_source": true,
+    "historical_extraction_receipt": false,
+    "snapshot_method": "fresh local clones created with git clone --no-hardlinks from the prepared repositories",
+    "clone_type": "local",
+    "remote_access": false,
+    "network_calls": false,
+    "paid_calls": false,
+    "disposable_root_path_contained_spaces": true,
+    "all_clones_clean_before": true,
+    "all_clones_clean_after": true,
+    "all_clone_heads_unchanged": true
+  },
+  "platform": {
+    "operating_system": "macOS 26.2",
+    "build": "25C56",
+    "architecture": "arm64",
+    "kernel": "Darwin 25.2.0",
+    "python": "3.13.5",
+    "git": "2.51.0",
+    "jq": "1.7.1-apple",
+    "bash": "3.2.57(1)-release",
+    "perl": "5.34.1",
+    "make": "3.81"
+  },
+  "prepared_commits": [
+    { "name": "gate-runner", "commit": "587facdaff79fedadd1ea582f30ae5f8282874a2", "clean_before": true, "clean_after": true, "head_unchanged": true },
+    { "name": "durable-mailbox", "commit": "71604edb98abbd0d078eda1e48305aa9961beef4", "clean_before": true, "clean_after": true, "head_unchanged": true },
+    { "name": "session-ledger", "commit": "f7ffb390974ed125de9917b6d83184a823dc0bbd", "clean_before": true, "clean_after": true, "head_unchanged": true },
+    { "name": "agent-file-guards", "commit": "7a83c380f1228a6978359723593443e50867fd04", "clean_before": true, "clean_after": true, "head_unchanged": true },
+    { "name": "worktree-guard", "commit": "1efffa22329822d3cff063b9706a967b04229460", "clean_before": true, "clean_after": true, "head_unchanged": true },
+    { "name": "shell-lock", "commit": "1691f1b91b233a679b53277e035bcc20d82d3ef5", "clean_before": true, "clean_after": true, "head_unchanged": true },
+    { "name": "repo-health", "commit": "f0c983339a927fedff397d6fc827749a203ee315", "clean_before": true, "clean_after": true, "head_unchanged": true },
+    { "name": "job-heartbeat", "commit": "b7b6fc619b12ecf9f6e19432f4404cad14c53967", "clean_before": true, "clean_after": true, "head_unchanged": true },
+    { "name": "config-baseline", "commit": "1fb79c714a02afe139202cd38fc0160e71eec8b8", "clean_before": true, "clean_after": true, "head_unchanged": true },
+    { "name": "review-receipts", "commit": "135c0f13b38b478a68bb051869c6c6ab99613f14", "clean_before": true, "clean_after": true, "head_unchanged": true },
+    { "name": "decision-ledger", "commit": "e6d51e42d937a333e55637a27a32793478bfadff", "clean_before": true, "clean_after": true, "head_unchanged": true },
+    { "name": "flightdeck-examples", "commit": "3c6909d0b291218c442eb610f8792c5bce063147", "clean_before": true, "clean_after": true, "head_unchanged": true }
+  ],
+  "component_suites": {
+    "command": "make test",
+    "exit_code": 0,
+    "all_passed": true,
+    "results": [
+      { "component": "gate-runner", "exit_code": 0, "count": 41, "units": "unittest cases", "skipped": 0 },
+      { "component": "durable-mailbox", "exit_code": 0, "count": 18, "units": "grouped regression cases", "skipped": 0 },
+      { "component": "session-ledger", "exit_code": 0, "count": 19, "units": "grouped regression cases", "skipped": 0 },
+      { "component": "agent-file-guards", "exit_code": 0, "count": 111, "units": "assertions", "skipped": 0 },
+      { "component": "worktree-guard", "exit_code": 0, "count": 42, "units": "unittest cases", "skipped": 0 },
+      { "component": "shell-lock", "exit_code": 0, "count": 24, "units": "unittest cases", "skipped": 0 },
+      { "component": "repo-health", "exit_code": 0, "count": 43, "units": "unittest cases", "skipped": 0 },
+      { "component": "job-heartbeat", "exit_code": 0, "count": 25, "units": "unittest cases", "skipped": 0 },
+      { "component": "config-baseline", "exit_code": 0, "count": 33, "units": "unittest cases", "skipped": 0 },
+      { "component": "review-receipts", "exit_code": 0, "count": 32, "units": "unittest cases", "skipped": 0 },
+      { "component": "decision-ledger", "exit_code": 0, "count": 32, "units": "unittest cases", "skipped": 0 }
+    ]
+  },
+  "installation_and_setup": {
+    "disposable_prefix_paths_contained_spaces": true,
+    "all_passed": true,
+    "results": [
+      { "component": "gate-runner", "command": "copy bin and gate_runner to <prefix>/share/gate-runner; symlink gate-run into <prefix>/bin; gate-run --version", "exit_code": 0 },
+      { "component": "durable-mailbox", "command": "copy sibling bin and lib directories to <prefix>; mailbox --help", "exit_code": 0 },
+      { "component": "session-ledger", "command": "copy sibling bin and lib directories to <prefix>; session-ledger --help", "exit_code": 0 },
+      { "component": "agent-file-guards", "command": "make install PREFIX=<disposable-prefix>; run all three installed commands with --help", "exit_code": 0 },
+      { "component": "worktree-guard", "command": "make install PREFIX=<disposable-prefix>; worktree-guard --help", "exit_code": 0 },
+      { "component": "shell-lock", "command": "make install PREFIX=<disposable-prefix>; shell-lock --help", "exit_code": 0 },
+      { "component": "repo-health", "command": "make install PREFIX=<disposable-prefix>; repo-health --help", "exit_code": 0 },
+      { "component": "job-heartbeat", "command": "make install PREFIX=<disposable-prefix>; job-heartbeat --help", "exit_code": 0 },
+      { "component": "config-baseline", "command": "make install PREFIX=<disposable-prefix>; config-baseline --help", "exit_code": 0 },
+      { "component": "review-receipts", "command": "make install PREFIX=<disposable-prefix>; review-receipts --help", "exit_code": 0 },
+      { "component": "decision-ledger", "command": "make install PREFIX=<disposable-prefix>; decision-ledger --help", "exit_code": 0 }
+    ]
+  },
+  "component_demos": {
+    "all_passed": true,
+    "results": [
+      { "component": "gate-runner", "command": "examples/README.md start/join/wait/log and three-key mutation fixture", "exit_code": 0, "units": "documented fixture", "skipped": 0 },
+      { "component": "durable-mailbox", "command": "bash examples/roundtrip.sh", "exit_code": 0, "units": "example", "skipped": 0 },
+      { "component": "session-ledger", "command": "bash examples/lifecycle.sh", "exit_code": 0, "units": "example", "skipped": 0 },
+      { "component": "agent-file-guards", "command": "bash examples/guarded-write.sh <fixture>/report.md; bash examples/pre-commit", "exit_code": 0, "units": "2 examples", "skipped": 0 },
+      { "component": "worktree-guard", "command": "bash examples/demo.sh", "exit_code": 0, "units": "example", "skipped": 0 },
+      { "component": "shell-lock", "command": "bash examples/demo.sh", "exit_code": 0, "units": "example", "skipped": 0 },
+      { "component": "repo-health", "command": "bash examples/demo.sh", "exit_code": 0, "units": "example", "skipped": 0 },
+      { "component": "job-heartbeat", "command": "make demo", "exit_code": 0, "units": "example", "skipped": 0 },
+      { "component": "config-baseline", "command": "bash examples/demo.sh", "exit_code": 0, "units": "example", "skipped": 0 },
+      { "component": "review-receipts", "command": "make demo", "exit_code": 0, "units": "example", "skipped": 0 },
+      { "component": "decision-ledger", "command": "bash examples/roundtrip.sh", "exit_code": 0, "units": "example", "skipped": 0 }
+    ]
+  },
+  "companion_workflow": {
+    "snapshot_commit": "3c6909d0b291218c442eb610f8792c5bce063147",
+    "commands": [
+      { "name": "companion_make_test", "command": "make test", "exit_code": 0, "count": 7, "units": "smoke tests", "skipped": 0 },
+      { "name": "companion_core_demo", "command": "make demo", "exit_code": 0, "count": 7, "units": "demo stages", "skipped": 0 }
+    ],
+    "recipes_executed_by_make_test": [
+      { "command": "bash examples/heartbeat-recipe.sh", "exit_code": 0 },
+      { "command": "bash examples/config-baseline-recipe.sh", "exit_code": 0 },
+      { "command": "bash examples/review-receipts-recipe.sh", "exit_code": 0 },
+      { "command": "bash examples/decision-ledger-recipe.sh", "exit_code": 0 }
+    ]
+  }
+}
