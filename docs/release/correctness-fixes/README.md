@@ -7,6 +7,8 @@ This changes no publication status and asserts no native feature equivalence.
 
 - [Changes and regression boundaries](changes.md)
 - [Validation and receipt interpretation](validation.md)
+- [Timestamped original-defect replay](baseline-reproduction.json)
+- [Timestamped fixed-revision host checks](host-validation.json)
 
 The [historical correctness review](../../correctness-review/README.md) and its
 original reproducer remain unchanged. New execution evidence belongs here and

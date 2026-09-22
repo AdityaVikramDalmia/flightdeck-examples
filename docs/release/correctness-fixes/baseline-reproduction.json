@@ -1,0 +1,38 @@
+{
+  "command": [
+    "python3",
+    "docs/correctness-review/examples/reproduce.py",
+    "--tools-root",
+    "<tools-root>"
+  ],
+  "started_at_utc": "2026-09-22T10:58:08.776128+00:00",
+  "finished_at_utc": "2026-09-22T10:58:16.477399+00:00",
+  "duration_seconds": 7.701,
+  "exit_code": 0,
+  "stderr": "",
+  "cwd": "original examples checkout at recorded revision, read only",
+  "interpretation": "Exit zero means the original defects and controls reproduced, not that the base implementation is correct.",
+  "observed": {
+    "examples_revision": "6ad9597e5ed481e4efaf0f89cd0b59aafac3c7db",
+    "E1_live_failure": {
+      "operation": "live",
+      "exit_code": 0,
+      "failure_injected": true,
+      "printed_pass": true,
+      "fixture_removed": true
+    },
+    "E1_validate_failure_control": {
+      "operation": "validate",
+      "exit_code": 1,
+      "failure_injected": true,
+      "printed_pass": false,
+      "fixture_removed": true
+    },
+    "E2_cleanup_identity": {
+      "cleanup_exit": 0,
+      "decoy_exit": -15,
+      "decoy_is_supervisor": false,
+      "neighbor_control_alive": true
+    }
+  }
+}

@@ -22,3 +22,12 @@ commit and name the exact implementation revision and executed source hashes.
 Fresh receipts describe this host only. Historical Linux receipts are not a
 Linux validation of these fixes. No automated safety rejection occurred in this
 fix lane; previously blocked review probes were not retried.
+
+Final checks at implementation revision `cc4c615` passed on macOS:
+`make test` ran **10 unittest methods, zero skips**, including three ledger
+injection subcases and all four optional recipe executions; `make demo` passed
+one full workflow invocation. Exact UTC timestamps, elapsed times, complete
+command outputs, component revisions, and implementation/test hashes are in
+[host-validation.json](host-validation.json). The newly timestamped baseline
+[replay](baseline-reproduction.json) independently re-established both defects
+and their controls at `6ad9597`; it is separate from the older review evidence.
