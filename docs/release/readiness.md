@@ -1,5 +1,7 @@
 # Readiness and launch boundary
 
+Use the later [readiness directory](readiness/README.md) for the corrected manifest, validation, verdict, drafts and ordered launch procedure. The active task separately authorizes reviewed ordinary pushes to existing private remotes; public visibility and article enabling remain deferred.
+
 This candidate has documented setup, requirements, command/failure
 contracts, synthetic tests, provenance, Apache-2.0 terms, and maintainer guidance.
 These are preparation artifacts, not a public release or a security certification.

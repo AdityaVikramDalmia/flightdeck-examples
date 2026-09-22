@@ -8,6 +8,9 @@ or original-runtime mutation. Any later private push by the coordinating parent
 is a separate action with separate remote verification.
 
 - [Exact twelve-repository candidate manifest](candidate-manifest.json)
+- [Verdict and remaining gates](remaining-gates.md)
+- [Four portfolio drafts and withdrawal](portfolio-drafts.md)
+- [Ordered later release](release-sequence.md)
 - [Repository identity and privacy observations](repository-audit.json)
 - [Distribution and attribution audit](distribution.md), with [inventory observations](distribution-audit.json)
 - [Secret-scan scope and adjudication](secret-scan.md)

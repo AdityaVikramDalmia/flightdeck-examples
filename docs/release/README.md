@@ -1,5 +1,7 @@
 # Flightdeck Examples: release preparation
 
+**Current:** [bounded release readiness, corrected candidates, receipts and later launch gates](readiness/README.md). The preparation snapshot below is historical; it does not describe the later corrected execution revisions.
+
 Prepared on 2026-09-22. Apache-2.0 is applied at the owner's direction. The
 repository remains private; adding a license is separate from public availability.
 All twelve repositories are deprecated for new Claude Code integrations at the

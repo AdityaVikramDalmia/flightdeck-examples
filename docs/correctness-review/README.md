@@ -1,5 +1,7 @@
 # Independent correctness review
 
+Historical review snapshot retained. Later [fixes and independent release validation](../release/readiness/README.md) resolve C1/E1/E2 without relabelling the partial coverage recorded below.
+
 Reviewed on 2026-09-22. **Partial runtime coverage; three reproduced findings.**
 Source/contract review covered all twelve repositories: eleven standalone
 projects containing thirteen tools, plus this examples repository. All remain

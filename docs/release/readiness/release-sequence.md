@@ -1,0 +1,13 @@
+# Ordered coordinated release procedure
+
+This procedure is deferred. The active instruction permits reviewed fast-forward pushes to existing private remotes, but explicitly prohibits changing visibility or enabling the draft articles now.
+
+1. Review the twelve entries in [candidate-manifest.json](candidate-manifest.json) and the later evidence-only diff. Fetch each named existing remote, verify owner/name/privacy and compare exact revisions. Resolve unexpected changes without force-push or discarding another worker's edits. Repeat affected tests/scans and add receipts when implementation changes.
+2. Resolve or explicitly accept the [remaining coverage gates](remaining-gates.md). Recheck LICENSE/NOTICE, provenance, third-party additions, machine dependencies and disclosure boundaries. All twelve remain deprecated references; no native-equivalence or renewed-support claim.
+3. Use ordinary fast-forward pushes for any reviewed commits still local, verify private remote HEADs, and make fresh private-remote clones to check revision/setup integrity. Existing local-clone receipts are not remote-clone test receipts.
+4. Obtain a new explicit instruction for this exact twelve-repository public release. Only then change visibility for the eleven component repositories and `flightdeck-examples`. Do not publish the original runtime or any unrelated repository. Use actual release dates/tags; never import private history or fabricate/backdate commits.
+5. Independently check unauthenticated public access, each owner/name, exact released revision, clone/download links, LICENSE/NOTICE, setup instructions and deprecation status. If any public link fails, leave the articles draft.
+6. Review the [four drafts](portfolio-drafts.md) against the released contracts and receipts, add only verified public links, and only then enable the intended articles in the existing portfolio blog collection. Preserve their genuine 2026-09-22 publication dates; later edits do not manufacture an earlier publication.
+7. Run portfolio `content:check`, `check`, `build`, `links`, `drafts:check` and desktop/phone browser checks of articles, indexes, archives, tags, series, RSS and sitemap. Commit the reviewed source and deploy an immutable private image through the existing BNC GitOps workflow. Preserve Cloudflare Tunnel, DNS, origin protection and unrelated content/apps. Verify public HTTPS without bypassing certificate warnings.
+
+A failed repository or article gate stops at its current private/draft state. Do not roll the site back to a pre-withdrawal image that would expose the four articles without deliberate republication.
