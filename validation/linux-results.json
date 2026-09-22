@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-22T07:01:26.607882+00:00",
+  "platform": "linux",
+  "versions": {
+    "host_system": "Darwin",
+    "host_machine": "arm64",
+    "python": "3.14.6",
+    "image": {
+      "exit_code": 0,
+      "stdout": "sha256:95e1569a6674da61e3251c1f441edc5dc69699721a441250bd6fd6f1082bb7f7",
+      "stderr": ""
+    },
+    "container_tools": {
+      "exit_code": 0,
+      "stdout": "Python 3.14.7\ngit version 2.54.0\njq-1.8.2\nGNU bash, version 5.3.9(1)-release (aarch64-alpine-linux-musl)\nPerl v5.42.2",
+      "stderr": ""
+    }
+  },
+  "results": [
+    {
+      "component": "gate-runner",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 41,
+      "seconds": 18.781,
+      "skipped": 0,
+      "commit": "59b037a39804d98e8b5358751ea5062a62bb79aa",
+      "clean_checkout": true
+    },
+    {
+      "component": "durable-mailbox",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 18,
+      "seconds": 1.606,
+      "skipped": 0,
+      "commit": "80e4945fdbb1318418a2bedfede424f91217ee75",
+      "clean_checkout": true
+    },
+    {
+      "component": "session-ledger",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 19,
+      "seconds": 2.949,
+      "skipped": 0,
+      "commit": "87cb68b2776afb4a4d5fc5e3f500107d45e955e9",
+      "clean_checkout": true
+    },
+    {
+      "component": "agent-file-guards",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 111,
+      "seconds": 1.646,
+      "skipped": 0,
+      "commit": "9fd5fea6e86d6e9d40b705945cb8f808fb73b347",
+      "clean_checkout": true
+    },
+    {
+      "component": "worktree-guard",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 42,
+      "seconds": 4.43,
+      "skipped": 0,
+      "commit": "056282957d60e2a7dacf481e7962a27d36f5311b",
+      "clean_checkout": true
+    },
+    {
+      "component": "shell-lock",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 24,
+      "seconds": 3.959,
+      "skipped": 0,
+      "commit": "eeb29ed5c3ddb9cbd5af03487cdab53e417073e4",
+      "clean_checkout": true
+    },
+    {
+      "component": "repo-health",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 43,
+      "seconds": 7.709,
+      "skipped": 0,
+      "commit": "9d3f922c7cf0394cad2c8db3ce65fe442a93bf1f",
+      "clean_checkout": true
+    },
+    {
+      "component": "config-baseline",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 33,
+      "seconds": 4.122,
+      "skipped": 2,
+      "commit": "dccb6f10c76fcb314cc919748299ce228980621a",
+      "clean_checkout": true
+    },
+    {
+      "component": "job-heartbeat",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 25,
+      "seconds": 4.834,
+      "skipped": 0,
+      "commit": "01a3029d5736d5645902e021b051e6675e880d5e",
+      "clean_checkout": true
+    }
+  ],
+  "all_passed": true
+}

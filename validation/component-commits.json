@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "recorded_date": "2026-09-22",
+  "components": [
+    {
+      "name": "gate-runner",
+      "repository": "https://github.com/AdityaVikramDalmia/flightdeck-gate-runner",
+      "commit": "59b037a39804d98e8b5358751ea5062a62bb79aa",
+      "clean": true,
+      "visibility": "private"
+    },
+    {
+      "name": "durable-mailbox",
+      "repository": "https://github.com/AdityaVikramDalmia/flightdeck-durable-mailbox",
+      "commit": "80e4945fdbb1318418a2bedfede424f91217ee75",
+      "clean": true,
+      "visibility": "private"
+    },
+    {
+      "name": "session-ledger",
+      "repository": "https://github.com/AdityaVikramDalmia/flightdeck-session-ledger",
+      "commit": "87cb68b2776afb4a4d5fc5e3f500107d45e955e9",
+      "clean": true,
+      "visibility": "private"
+    },
+    {
+      "name": "agent-file-guards",
+      "repository": "https://github.com/AdityaVikramDalmia/flightdeck-agent-file-guards",
+      "commit": "9fd5fea6e86d6e9d40b705945cb8f808fb73b347",
+      "clean": true,
+      "visibility": "private"
+    },
+    {
+      "name": "worktree-guard",
+      "repository": "https://github.com/AdityaVikramDalmia/flightdeck-worktree-guard",
+      "commit": "056282957d60e2a7dacf481e7962a27d36f5311b",
+      "clean": true,
+      "visibility": "private"
+    },
+    {
+      "name": "shell-lock",
+      "repository": "https://github.com/AdityaVikramDalmia/flightdeck-shell-lock",
+      "commit": "eeb29ed5c3ddb9cbd5af03487cdab53e417073e4",
+      "clean": true,
+      "visibility": "private"
+    },
+    {
+      "name": "repo-health",
+      "repository": "https://github.com/AdityaVikramDalmia/flightdeck-repo-health",
+      "commit": "9d3f922c7cf0394cad2c8db3ce65fe442a93bf1f",
+      "clean": true,
+      "visibility": "private"
+    },
+    {
+      "name": "job-heartbeat",
+      "repository": "https://github.com/AdityaVikramDalmia/flightdeck-job-heartbeat",
+      "commit": "01a3029d5736d5645902e021b051e6675e880d5e",
+      "clean": true,
+      "visibility": "private"
+    },
+    {
+      "name": "config-baseline",
+      "repository": "https://github.com/AdityaVikramDalmia/flightdeck-config-baseline",
+      "commit": "dccb6f10c76fcb314cc919748299ce228980621a",
+      "clean": true,
+      "visibility": "private"
+    },
+    {
+      "name": "review-receipts",
+      "repository": "https://github.com/AdityaVikramDalmia/flightdeck-review-receipts",
+      "commit": "c23b6bb21e0f4079a8f8db2bf060990258cb33e9",
+      "clean": true,
+      "visibility": "private"
+    },
+    {
+      "name": "decision-ledger",
+      "repository": "https://github.com/AdityaVikramDalmia/flightdeck-decision-ledger",
+      "commit": "07be1e58d4978d483124c53c9926b54ce7739ca7",
+      "clean": true,
+      "visibility": "private"
+    }
+  ]
+}

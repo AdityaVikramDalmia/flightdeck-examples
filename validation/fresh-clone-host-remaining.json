@@ -1,0 +1,142 @@
+{
+  "checked_at_utc": "2026-09-22T07:08:50+00:00",
+  "completed_at_utc": "2026-09-22T07:09:48+00:00",
+  "disposable_clones_removed": true,
+  "host": {
+    "architecture": "arm64",
+    "os": "Darwin",
+    "python": "3.14.6"
+  },
+  "repositories": [
+    {
+      "clean_after_tests": true,
+      "clean_before_tests": true,
+      "counts": {
+        "failed": 0,
+        "kind": "tests",
+        "passed": 42,
+        "skipped": 0,
+        "total": 42
+      },
+      "expected_head_prefix": "0562829",
+      "head": "056282957d60e2a7dacf481e7962a27d36f5311b",
+      "head_unchanged": true,
+      "is_private": true,
+      "make_test_exit": 0,
+      "repository_url": "https://github.com/AdityaVikramDalmia/flightdeck-worktree-guard",
+      "smoke_checks": [
+        {
+          "exit": 0,
+          "name": "documented fixture demo"
+        },
+        {
+          "exit": 0,
+          "name": "installed independent read-only worktree check"
+        },
+        {
+          "exit": 0,
+          "name": "documented install into a path containing spaces"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "clean_after_tests": true,
+      "clean_before_tests": true,
+      "counts": {
+        "failed": 0,
+        "kind": "tests",
+        "passed": 43,
+        "skipped": 0,
+        "total": 43
+      },
+      "expected_head_prefix": "9d3f922",
+      "head": "9d3f922c7cf0394cad2c8db3ce65fe442a93bf1f",
+      "head_unchanged": true,
+      "is_private": true,
+      "make_test_exit": 0,
+      "repository_url": "https://github.com/AdityaVikramDalmia/flightdeck-repo-health",
+      "smoke_checks": [
+        {
+          "exit": 0,
+          "name": "documented fixture demo"
+        },
+        {
+          "exit": 0,
+          "name": "installed independent two-repository JSON scan"
+        },
+        {
+          "exit": 0,
+          "name": "documented install into a path containing spaces"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "clean_after_tests": true,
+      "clean_before_tests": true,
+      "counts": {
+        "failed": 0,
+        "kind": "tests",
+        "passed": 33,
+        "skipped": 0,
+        "total": 33
+      },
+      "expected_head_prefix": "dccb6f1",
+      "head": "dccb6f10c76fcb314cc919748299ce228980621a",
+      "head_unchanged": true,
+      "is_private": true,
+      "make_test_exit": 0,
+      "repository_url": "https://github.com/AdityaVikramDalmia/flightdeck-config-baseline",
+      "smoke_checks": [
+        {
+          "exit": 0,
+          "name": "documented fixture demo"
+        },
+        {
+          "exit": 0,
+          "name": "installed independent snapshot and changed-input comparison"
+        },
+        {
+          "exit": 0,
+          "name": "documented install into a path containing spaces"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "clean_after_tests": true,
+      "clean_before_tests": true,
+      "counts": {
+        "failed": 0,
+        "kind": "tests",
+        "passed": 25,
+        "skipped": 0,
+        "total": 25
+      },
+      "expected_head_prefix": "01a3029",
+      "head": "01a3029d5736d5645902e021b051e6675e880d5e",
+      "head_unchanged": true,
+      "is_private": true,
+      "make_test_exit": 0,
+      "repository_url": "https://github.com/AdityaVikramDalmia/flightdeck-job-heartbeat",
+      "smoke_checks": [
+        {
+          "exit": 0,
+          "name": "documented fixture demo"
+        },
+        {
+          "exit": 0,
+          "name": "installed independent generation and finish receipt"
+        },
+        {
+          "exit": 0,
+          "name": "documented install into a path containing spaces"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "schema_version": 1,
+  "status": "passed"
+}

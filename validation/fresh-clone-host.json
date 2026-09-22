@@ -1,0 +1,146 @@
+{
+  "checked_at_utc": "2026-09-22T06:41:09+00:00",
+  "completed_at_utc": "2026-09-22T06:42:09+00:00",
+  "disposable_clones_removed": true,
+  "host": {
+    "architecture": "arm64",
+    "os": "Darwin",
+    "python": "3.14.6"
+  },
+  "repositories": [
+    {
+      "clean_after_tests": true,
+      "clean_before_tests": true,
+      "counts": {
+        "failed": 0,
+        "kind": "tests",
+        "passed": 41,
+        "skipped": 0,
+        "total": 41
+      },
+      "expected_head_prefix": "59b037a",
+      "head": "59b037a39804d98e8b5358751ea5062a62bb79aa",
+      "head_unchanged": true,
+      "is_private": true,
+      "make_test_exit": 0,
+      "repository_url": "https://github.com/AdityaVikramDalmia/flightdeck-gate-runner",
+      "smoke_checks": [
+        {
+          "exit": 0,
+          "name": "documented layout and symlink install"
+        },
+        {
+          "exit": 0,
+          "name": "installed command execution and log"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "clean_after_tests": true,
+      "clean_before_tests": true,
+      "counts": {
+        "failed": 0,
+        "kind": "groups",
+        "passed": 18,
+        "skipped": 0,
+        "total": 18
+      },
+      "expected_head_prefix": "80e4945",
+      "head": "80e4945fdbb1318418a2bedfede424f91217ee75",
+      "head_unchanged": true,
+      "is_private": true,
+      "make_test_exit": 0,
+      "repository_url": "https://github.com/AdityaVikramDalmia/flightdeck-durable-mailbox",
+      "smoke_checks": [
+        {
+          "exit": 0,
+          "name": "documented roundtrip example"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "clean_after_tests": true,
+      "clean_before_tests": true,
+      "counts": {
+        "failed": 0,
+        "kind": "groups",
+        "passed": 19,
+        "skipped": 0,
+        "total": 19
+      },
+      "expected_head_prefix": "87cb68b",
+      "head": "87cb68b2776afb4a4d5fc5e3f500107d45e955e9",
+      "head_unchanged": true,
+      "is_private": true,
+      "make_test_exit": 0,
+      "repository_url": "https://github.com/AdityaVikramDalmia/flightdeck-session-ledger",
+      "smoke_checks": [
+        {
+          "exit": 0,
+          "name": "documented lifecycle example"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "clean_after_tests": true,
+      "clean_before_tests": true,
+      "counts": {
+        "failed": 0,
+        "kind": "assertions",
+        "passed": 111,
+        "skipped": 0,
+        "total": 111
+      },
+      "expected_head_prefix": "9fd5fea",
+      "head": "9fd5fea6e86d6e9d40b705945cb8f808fb73b347",
+      "head_unchanged": true,
+      "is_private": true,
+      "make_test_exit": 0,
+      "repository_url": "https://github.com/AdityaVikramDalmia/flightdeck-agent-file-guards",
+      "smoke_checks": [
+        {
+          "exit": 0,
+          "name": "documented install and independent commands"
+        },
+        {
+          "exit": 0,
+          "name": "guarded-write example"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "clean_after_tests": true,
+      "clean_before_tests": true,
+      "counts": {
+        "failed": 0,
+        "kind": "tests",
+        "passed": 24,
+        "skipped": 0,
+        "total": 24
+      },
+      "expected_head_prefix": "eeb29ed",
+      "head": "eeb29ed5c3ddb9cbd5af03487cdab53e417073e4",
+      "head_unchanged": true,
+      "is_private": true,
+      "make_test_exit": 0,
+      "repository_url": "https://github.com/AdityaVikramDalmia/flightdeck-shell-lock",
+      "smoke_checks": [
+        {
+          "exit": 0,
+          "name": "documented concurrency example"
+        },
+        {
+          "exit": 0,
+          "name": "installed independent command execution"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "schema_version": 1,
+  "status": "passed"
+}

@@ -1,0 +1,78 @@
+{
+  "checked_at_utc": "2026-09-22T07:44:49+00:00",
+  "completed_at_utc": "2026-09-22T07:45:11+00:00",
+  "disposable_clones_removed": true,
+  "host": {
+    "architecture": "arm64",
+    "os": "Darwin",
+    "python": "3.14.6"
+  },
+  "repositories": [
+    {
+      "clean_after_tests": true,
+      "clean_before_tests": true,
+      "counts": {
+        "failed": 0,
+        "kind": "tests",
+        "passed": 32,
+        "skipped": 0,
+        "total": 32
+      },
+      "expected_head_prefix": "c23b6bb",
+      "head": "c23b6bb21e0f4079a8f8db2bf060990258cb33e9",
+      "head_unchanged": true,
+      "is_private": true,
+      "make_test_exit": 0,
+      "repository_url": "https://github.com/AdityaVikramDalmia/flightdeck-review-receipts",
+      "smoke_checks": [
+        {
+          "exit": 0,
+          "name": "documented fixture demo"
+        },
+        {
+          "exit": 0,
+          "name": "installed author/check preserves rejecting verdict and exact notes"
+        },
+        {
+          "exit": 0,
+          "name": "documented install into a path containing spaces"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "clean_after_tests": true,
+      "clean_before_tests": true,
+      "counts": {
+        "failed": 0,
+        "kind": "tests",
+        "passed": 32,
+        "skipped": 0,
+        "total": 32
+      },
+      "expected_head_prefix": "07be1e5",
+      "head": "07be1e58d4978d483124c53c9926b54ce7739ca7",
+      "head_unchanged": true,
+      "is_private": true,
+      "make_test_exit": 0,
+      "repository_url": "https://github.com/AdityaVikramDalmia/flightdeck-decision-ledger",
+      "smoke_checks": [
+        {
+          "exit": 0,
+          "name": "documented fixture demo"
+        },
+        {
+          "exit": 0,
+          "name": "installed question/answer history and integrity validation"
+        },
+        {
+          "exit": 0,
+          "name": "documented install into a path containing spaces"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "schema_version": 1,
+  "status": "passed"
+}

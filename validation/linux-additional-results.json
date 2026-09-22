@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-22T07:42:53.173888+00:00",
+  "platform": "linux",
+  "versions": {
+    "host_system": "Darwin",
+    "host_machine": "arm64",
+    "python": "3.14.6",
+    "image": {
+      "exit_code": 0,
+      "stdout": "sha256:95e1569a6674da61e3251c1f441edc5dc69699721a441250bd6fd6f1082bb7f7",
+      "stderr": ""
+    },
+    "container_tools": {
+      "exit_code": 0,
+      "stdout": "Python 3.14.7\ngit version 2.54.0\njq-1.8.2\nGNU bash, version 5.3.9(1)-release (aarch64-alpine-linux-musl)\nPerl v5.42.2",
+      "stderr": ""
+    }
+  },
+  "results": [
+    {
+      "component": "decision-ledger",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 32,
+      "seconds": 8.153,
+      "skipped": 0,
+      "commit": "07be1e58d4978d483124c53c9926b54ce7739ca7",
+      "clean_checkout": true
+    },
+    {
+      "component": "review-receipts",
+      "platform": "linux",
+      "exit_code": 0,
+      "checks_or_groups": 32,
+      "seconds": 4.345,
+      "skipped": 2,
+      "commit": "c23b6bb21e0f4079a8f8db2bf060990258cb33e9",
+      "clean_checkout": true
+    }
+  ],
+  "all_passed": true
+}

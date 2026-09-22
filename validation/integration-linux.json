@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-22T07:44:42.172104+00:00",
+  "platform": "linux",
+  "image": "flightdeck-validation:local",
+  "image_id": "sha256:95e1569a6674da61e3251c1f441edc5dc69699721a441250bd6fd6f1082bb7f7",
+  "isolation": {
+    "network": "none",
+    "root_filesystem": "read-only",
+    "source_mount": "read-only",
+    "workspace": "disposable executable tmpfs",
+    "uid": 1000
+  },
+  "snapshot_policy": "One copy of all eleven sibling tool checkouts and companion; results use that fixed copy. Git metadata recorded immediately before copy; content digests omit Git metadata and Python caches.",
+  "source_checkouts": [
+    {
+      "component": "gate-runner",
+      "commit": "59b037a39804d98e8b5358751ea5062a62bb79aa",
+      "checkout_status": "clean",
+      "changed_paths": []
+    },
+    {
+      "component": "durable-mailbox",
+      "commit": "80e4945fdbb1318418a2bedfede424f91217ee75",
+      "checkout_status": "clean",
+      "changed_paths": []
+    },
+    {
+      "component": "session-ledger",
+      "commit": "87cb68b2776afb4a4d5fc5e3f500107d45e955e9",
+      "checkout_status": "clean",
+      "changed_paths": []
+    },
+    {
+      "component": "agent-file-guards",
+      "commit": "9fd5fea6e86d6e9d40b705945cb8f808fb73b347",
+      "checkout_status": "clean",
+      "changed_paths": []
+    },
+    {
+      "component": "worktree-guard",
+      "commit": "056282957d60e2a7dacf481e7962a27d36f5311b",
+      "checkout_status": "clean",
+      "changed_paths": []
+    },
+    {
+      "component": "shell-lock",
+      "commit": "eeb29ed5c3ddb9cbd5af03487cdab53e417073e4",
+      "checkout_status": "clean",
+      "changed_paths": []
+    },
+    {
+      "component": "repo-health",
+      "commit": "9d3f922c7cf0394cad2c8db3ce65fe442a93bf1f",
+      "checkout_status": "clean",
+      "changed_paths": []
+    },
+    {
+      "component": "config-baseline",
+      "commit": "dccb6f10c76fcb314cc919748299ce228980621a",
+      "checkout_status": "clean",
+      "changed_paths": []
+    },
+    {
+      "component": "job-heartbeat",
+      "commit": "01a3029d5736d5645902e021b051e6675e880d5e",
+      "checkout_status": "clean",
+      "changed_paths": []
+    },
+    {
+      "component": "review-receipts",
+      "commit": "c23b6bb21e0f4079a8f8db2bf060990258cb33e9",
+      "checkout_status": "clean",
+      "changed_paths": []
+    },
+    {
+      "component": "decision-ledger",
+      "commit": "07be1e58d4978d483124c53c9926b54ce7739ca7",
+      "checkout_status": "clean",
+      "changed_paths": []
+    },
+    {
+      "component": "flightdeck-examples",
+      "commit": null,
+      "checkout_status": "dirty",
+      "changed_paths": [
+        ".gitignore",
+        "Makefile",
+        "PROVENANCE.md",
+        "README.md",
+        "catalog.json",
+        "docs/",
+        "examples/",
+        "tests/",
+        "validation/"
+      ]
+    }
+  ],
+  "snapshot": [
+    {
+      "component": "gate-runner",
+      "snapshot_sha256": "b76a80dae777a317b088fcbc83c1ef2bd2cd0801b1ac3d717bd4638e79897c1a",
+      "snapshot_files": 16
+    },
+    {
+      "component": "durable-mailbox",
+      "snapshot_sha256": "a2c552cbb0feab6579d48a764ed5df30fc5dd6324caebcff6b76c3d66447dadd",
+      "snapshot_files": 16
+    },
+    {
+      "component": "session-ledger",
+      "snapshot_sha256": "2350612f30d64de8e1c4c076b87a32e241d9e4d04978222d21eeea97a99d5354",
+      "snapshot_files": 17
+    },
+    {
+      "component": "agent-file-guards",
+      "snapshot_sha256": "fc51b7dff58632323ac5fb271e57bf9ed930319ed1630f831472d72f26fa6889",
+      "snapshot_files": 22
+    },
+    {
+      "component": "worktree-guard",
+      "snapshot_sha256": "c27ea4ee7d195ea24fcdb0d3c7abbf46c8acc54fd473d3d25d8cd0fca1566f2d",
+      "snapshot_files": 14
+    },
+    {
+      "component": "shell-lock",
+      "snapshot_sha256": "02a9704785c478a115655385155ba94c894f3d32d49aab998c2d3357d30b4f94",
+      "snapshot_files": 13
+    },
+    {
+      "component": "repo-health",
+      "snapshot_sha256": "30e1a4f9a6c3c25a2674aaf2afc3a146539f61de5f2f0c9e21b5023062b121b9",
+      "snapshot_files": 14
+    },
+    {
+      "component": "config-baseline",
+      "snapshot_sha256": "f5504c8a0f2b035d72a2c2baee138b5d362efc59b1cc48550248cea143395d69",
+      "snapshot_files": 14
+    },
+    {
+      "component": "job-heartbeat",
+      "snapshot_sha256": "7a1d0d8d449afe13e9841c403c1f2d541ea404cdb07f290ca959c5ddbac74acd",
+      "snapshot_files": 15
+    },
+    {
+      "component": "review-receipts",
+      "snapshot_sha256": "b4a1793b4079e7e008fd4759f75b846a6a1988df6bf84bfbd6766f23644dd347",
+      "snapshot_files": 15
+    },
+    {
+      "component": "decision-ledger",
+      "snapshot_sha256": "753eee104ae85ec051cdd82858c489b27a1c34bebd8b0baff76118ec1b67f5f4",
+      "snapshot_files": 15
+    },
+    {
+      "component": "flightdeck-examples",
+      "snapshot_sha256": "5d05fd81d464af695c275139f1dec3da3e4f12cd37daa875897435a1dd831191",
+      "snapshot_files": 40
+    }
+  ],
+  "catalog": {
+    "entry_count": 11,
+    "utility_count": 13,
+    "unique_utility_count": 13,
+    "runtime_checkouts": 11,
+    "matched_checkout_set": true,
+    "all_private_https_repositories": true
+  },
+  "versions": {
+    "python": "Python 3.14.7",
+    "git": "git version 2.54.0",
+    "jq": "jq-1.8.2",
+    "bash": "GNU bash, version 5.3.9(1)-release (aarch64-alpine-linux-musl)",
+    "ps": "ps from procps-ng 4.0.6"
+  },
+  "results": [
+    {
+      "name": "smoke",
+      "command": "make smoke",
+      "exit_code": 0,
+      "seconds": 4.382,
+      "tests": 7,
+      "skipped": 0,
+      "verification_assertions": 4,
+      "assertions_passed": 4,
+      "fixture_cleanup_passed": true,
+      "passed": true
+    },
+    {
+      "name": "end_to_end",
+      "command": "bash examples/end-to-end-demo.sh",
+      "exit_code": 0,
+      "seconds": 1.239,
+      "workflow_stages": 7,
+      "verification_assertions": 4,
+      "assertions_passed": 4,
+      "fixture_cleanup_passed": true,
+      "passed": true
+    },
+    {
+      "name": "heartbeat_recipe",
+      "command": "bash examples/heartbeat-recipe.sh",
+      "exit_code": 0,
+      "seconds": 0.306,
+      "verification_assertions": 2,
+      "assertions_passed": 2,
+      "fixture_cleanup_passed": true,
+      "passed": true
+    },
+    {
+      "name": "config_baseline_recipe",
+      "command": "bash examples/config-baseline-recipe.sh",
+      "exit_code": 0,
+      "seconds": 0.142,
+      "reported_differences": {
+        "added": 1,
+        "changed": 1,
+        "removed": 0
+      },
+      "verification_assertions": 4,
+      "assertions_passed": 4,
+      "fixture_cleanup_passed": true,
+      "passed": true
+    },
+    {
+      "name": "review_receipts_recipe",
+      "command": "bash examples/review-receipts-recipe.sh",
+      "exit_code": 0,
+      "seconds": 0.182,
+      "verification_assertions": 4,
+      "assertions_passed": 4,
+      "fixture_cleanup_passed": true,
+      "passed": true
+    },
+    {
+      "name": "decision_ledger_recipe",
+      "command": "bash examples/decision-ledger-recipe.sh",
+      "exit_code": 0,
+      "seconds": 0.682,
+      "verification_assertions": 4,
+      "assertions_passed": 4,
+      "fixture_cleanup_passed": true,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}
