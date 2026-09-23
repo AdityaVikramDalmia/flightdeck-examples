@@ -1,15 +1,15 @@
 # Flightdeck Examples
 
 > **Deprecated for new Claude Code integrations — 2026-09-22.** Retained as an
-> Apache-2.0 reference project. Public launch remains deferred and the repository
-> remains private. This is a maintainer status decision, not a claim that Claude
+> Apache-2.0 public reference implementation. This is a maintainer status
+> decision, not a claim that Claude
 > Code replaces every capability. No ongoing feature work or support is promised.
 
-Private candidate (Apache-2.0 licensed; public launch deferred): companion examples for **11 independent tool repositories exposing 13 utilities**. Agent File Guards contributes three commands; each other tool repository contributes one. This repository contains a reproducible composition demo and concise portfolio case studies. It contains no service credentials, remote integration, model calls, or simulated performance claims.
+Public reference implementation (Apache-2.0 licensed; deprecated for new Claude Code integrations as of 2026-09-22): companion examples for **11 independent tool repositories exposing 13 utilities**. Agent File Guards contributes three commands; each other tool repository contributes one. This repository contains a reproducible composition demo and concise portfolio case studies. It contains no service credentials, remote integration, model calls, or simulated performance claims.
 
-The repositories named below are private. Their GitHub URLs are identifiers for authorized collaborators and should not be presented as public downloads:
+The repositories named below are public reference implementations, deprecated for new Claude Code integrations as of 2026-09-22:
 
-| Tool | Private repository | Demonstration |
+| Tool | Repository | Demonstration |
 | --- | --- | --- |
 | Gate Runner | [flightdeck-gate-runner](https://github.com/AdityaVikramDalmia/flightdeck-gate-runner) | Runs and deduplicates project checks |
 | Durable Mailbox | [flightdeck-durable-mailbox](https://github.com/AdityaVikramDalmia/flightdeck-durable-mailbox) | Publishes a verdict and acknowledges a question |
@@ -25,7 +25,7 @@ The repositories named below are private. Their GitHub URLs are identifiers for 
 
 Start with the [portfolio index](docs/portfolio/README.md) or the machine-readable [catalog](catalog.json).
 The [architecture guide](docs/architecture/README.md) explains the workflow and each tool's contract.
-The [candidate summary](RELEASE-CANDIDATE.md) links the frozen commits and verification evidence.
+The historical [2026-09-22 candidate summary](RELEASE-CANDIDATE.md) links the frozen commits and verification evidence.
 
 ## Checkout layout
 
@@ -47,7 +47,7 @@ flightdeck-tools/
   worktree-guard/
 ```
 
-Directory names are deliberately shorter than the private remote repository names. An alternate layout can be selected explicitly:
+Directory names are deliberately shorter than the remote repository names. An alternate layout can be selected explicitly:
 
 ```sh
 bash examples/end-to-end-demo.sh --tools-root /path/to/tool-checkouts
@@ -96,11 +96,11 @@ The smoke suite runs the complete demo with deliberately conflicting inherited G
 
 The final ledger query must succeed and return no live sessions before the demo reports PASS. The EXIT trap waits for its direct workers and selects detached Gate Runner supervisors from this fixture's attempt metadata. It checks each recorded PID against the complete interpreter, resolved Gate Runner script, exact attempt path, and descriptor arguments before signalling. Diagnostic text merely quoting the fixture path is insufficient. Ambiguous ownership or incomplete startup metadata makes cleanup fail and retain the fixture; verified cleanup removes it. Process inspection and signalling are not atomic, and SIGKILL and machine failure cannot run cleanup traps. Shell Lock coordinates cooperating writers only; preflight checks and health reports are observations, not atomic snapshots.
 
-Licensed under Apache-2.0; see [LICENSE](LICENSE) and [NOTICE](NOTICE). GitHub access remains private until a separate public-launch instruction. The license grants rights to recipients; private visibility controls access and does not add a non-redistribution term.
+Licensed under Apache-2.0; see [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
 ## License and maintenance
 
 Copyright 2026 Aditya Dalmia. Licensed under [Apache-2.0](LICENSE), with
-[attribution](NOTICE) and [source provenance](PROVENANCE.md). Public launch is
-deferred; repository access remains private. See the [release preparation index](docs/release/README.md),
+[attribution](NOTICE) and [source provenance](PROVENANCE.md). This is a public
+reference implementation, deprecated for new Claude Code integrations as of 2026-09-22. See the [release preparation index](docs/release/README.md),
 [contributing guide](CONTRIBUTING.md), and [security contact](SECURITY.md).

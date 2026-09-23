@@ -12,5 +12,6 @@ This changes no publication status and asserts no native feature equivalence.
 - [2026-09-23 cleanup interpreter-spelling fix](2026-09-23-interpreter-spelling.md)
 
 The [historical correctness review](../../correctness-review/README.md) and its
-original reproducer remain unchanged. New execution evidence belongs here and
+original reproducer remain unchanged, apart from the 2026-09-23 redaction of an
+unrelated private project's name. New execution evidence belongs here and
 does not retroactively alter those observations.

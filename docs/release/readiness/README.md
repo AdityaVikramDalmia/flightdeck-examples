@@ -2,7 +2,7 @@
 
 This directory records a bounded release-readiness audit of eleven component
 repositories exposing thirteen utilities, plus the twelfth examples repository.
-All remain private Apache-2.0 reference artifacts, deprecated for new Claude Code
+At the audit all were private Apache-2.0 reference artifacts, deprecated for new Claude Code
 integrations as of 2026-09-22. This audit lane performs no public launch, push, visibility change, cloud CI,
 or original-runtime mutation. Any later private push by the coordinating parent
 is a separate action with separate remote verification.

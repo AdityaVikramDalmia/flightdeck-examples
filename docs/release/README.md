@@ -1,14 +1,14 @@
 # Flightdeck Examples: release preparation
 
-**Current:** [bounded release readiness, corrected candidates, receipts and later launch gates](readiness/README.md). The preparation snapshot below is historical; it does not describe the later corrected execution revisions.
+**Latest audit (2026-09-22):** [bounded release readiness, corrected candidates, receipts and launch gates](readiness/README.md). The preparation snapshot below is historical; it does not describe the later corrected execution revisions.
 
 Prepared on 2026-09-22. Apache-2.0 is applied at the owner's direction. The
-repository remains private; adding a license is separate from public availability.
+repository was private at preparation and is now a public reference implementation; licensing and public availability were separate steps.
 All twelve repositories are deprecated for new Claude Code integrations at the
 maintainer's direction, effective 2026-09-22. They remain reference artifacts.
 
 - [Source history and attribution](history.md)
-- [Readiness and remaining launch work](readiness.md)
+- [Readiness and launch checklist](readiness.md)
 - [License](../../LICENSE) and [notice](../../NOTICE)
 - [Component provenance](../../PROVENANCE.md)
 - [Prepared macOS local-clone receipt](prepared-host.json)

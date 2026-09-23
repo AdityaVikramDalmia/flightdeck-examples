@@ -23,5 +23,5 @@ groups; they are reported separately and are not a code-coverage percentage.
 
 The components do not import the original operator's project roster, transcripts,
 global agent rules, account proxies, or private infrastructure configuration.
-Private GitHub visibility and a deferred public launch are intentional
-release status, not runtime dependencies.
+Public GitHub visibility and the 2026-09-22 deprecation are release
+status, not runtime dependencies.

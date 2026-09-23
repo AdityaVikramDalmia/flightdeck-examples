@@ -2,7 +2,7 @@
 
 Deprecated reference material for new Claude Code integrations as of 2026-09-22.
 
-Private repository: `github.com/AdityaVikramDalmia/flightdeck-shell-lock` (authorized access required). Private candidate; Apache-2.0 licensed; public launch deferred.
+Repository: `github.com/AdityaVikramDalmia/flightdeck-shell-lock`. Public reference implementation; Apache-2.0 licensed.
 
 ## Problem
 

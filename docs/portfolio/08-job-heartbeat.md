@@ -2,7 +2,7 @@
 
 Deprecated reference material for new Claude Code integrations as of 2026-09-22.
 
-Private repository: `github.com/AdityaVikramDalmia/flightdeck-job-heartbeat` (authorized access required). Private candidate; Apache-2.0 licensed; public launch deferred.
+Repository: `github.com/AdityaVikramDalmia/flightdeck-job-heartbeat`. Public reference implementation; Apache-2.0 licensed.
 
 ## Problem
 

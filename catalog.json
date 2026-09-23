@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "title": "Flightdeck private tool case studies",
-  "visibility": "private",
-  "public_availability_implied": false,
+  "title": "Flightdeck tool case studies",
+  "visibility": "public",
+  "public_availability_implied": true,
   "integration_demo": "examples/end-to-end-demo.sh",
   "case_studies": [
     {
       "id": "gate-runner",
       "title": "One durable verdict for one code state",
       "repository": "https://github.com/AdityaVikramDalmia/flightdeck-gate-runner",
-      "visibility": "private",
+      "visibility": "public",
       "document": "docs/portfolio/01-gate-runner.md",
       "tools": [
         "gate-run"
@@ -21,7 +21,7 @@
       "id": "durable-mailbox",
       "title": "Retained local handoff with explicit acknowledgment",
       "repository": "https://github.com/AdityaVikramDalmia/flightdeck-durable-mailbox",
-      "visibility": "private",
+      "visibility": "public",
       "document": "docs/portfolio/02-durable-mailbox.md",
       "tools": [
         "mailbox"
@@ -33,7 +33,7 @@
       "id": "session-ledger",
       "title": "Append-only lifecycle reports",
       "repository": "https://github.com/AdityaVikramDalmia/flightdeck-session-ledger",
-      "visibility": "private",
+      "visibility": "public",
       "document": "docs/portfolio/03-session-ledger.md",
       "tools": [
         "session-ledger"
@@ -45,7 +45,7 @@
       "id": "agent-file-guards",
       "title": "Safer intake and file rewrites",
       "repository": "https://github.com/AdityaVikramDalmia/flightdeck-agent-file-guards",
-      "visibility": "private",
+      "visibility": "public",
       "document": "docs/portfolio/04-agent-file-guards.md",
       "tools": [
         "untrusted-intake.sh",
@@ -59,7 +59,7 @@
       "id": "worktree-guard",
       "title": "Preflight before merge and removal",
       "repository": "https://github.com/AdityaVikramDalmia/flightdeck-worktree-guard",
-      "visibility": "private",
+      "visibility": "public",
       "document": "docs/portfolio/05-worktree-guard.md",
       "tools": [
         "worktree-guard"
@@ -71,7 +71,7 @@
       "id": "shell-lock",
       "title": "Local serialization around cooperating writers",
       "repository": "https://github.com/AdityaVikramDalmia/flightdeck-shell-lock",
-      "visibility": "private",
+      "visibility": "public",
       "document": "docs/portfolio/06-shell-lock.md",
       "tools": [
         "shell-lock"
@@ -83,7 +83,7 @@
       "id": "repo-health",
       "title": "Distinguish observed state from missing evidence",
       "repository": "https://github.com/AdityaVikramDalmia/flightdeck-repo-health",
-      "visibility": "private",
+      "visibility": "public",
       "document": "docs/portfolio/07-repo-health.md",
       "tools": [
         "repo-health"
@@ -95,7 +95,7 @@
       "id": "job-heartbeat",
       "title": "Generation-safe progress reports",
       "repository": "https://github.com/AdityaVikramDalmia/flightdeck-job-heartbeat",
-      "visibility": "private",
+      "visibility": "public",
       "document": "docs/portfolio/08-job-heartbeat.md",
       "tools": [
         "job-heartbeat"
@@ -107,7 +107,7 @@
       "id": "config-baseline",
       "title": "Explicit configuration drift evidence",
       "repository": "https://github.com/AdityaVikramDalmia/flightdeck-config-baseline",
-      "visibility": "private",
+      "visibility": "public",
       "document": "docs/portfolio/09-config-baseline.md",
       "tools": [
         "config-baseline"
@@ -119,7 +119,7 @@
       "id": "review-receipts",
       "title": "Bind review words to exact selected files",
       "repository": "https://github.com/AdityaVikramDalmia/flightdeck-review-receipts",
-      "visibility": "private",
+      "visibility": "public",
       "document": "docs/portfolio/10-review-receipts.md",
       "tools": [
         "review-receipts"
@@ -131,7 +131,7 @@
       "id": "decision-ledger",
       "title": "Keep original words distinct from interpretation",
       "repository": "https://github.com/AdityaVikramDalmia/flightdeck-decision-ledger",
-      "visibility": "private",
+      "visibility": "public",
       "document": "docs/portfolio/11-decision-ledger.md",
       "tools": [
         "decision-ledger"
@@ -140,7 +140,7 @@
       "deprecation_date": "2026-09-22"
     }
   ],
-  "release_status": "private-candidate",
+  "release_status": "public-reference",
   "license_status": "Apache-2.0",
   "tool_repository_count": 11,
   "utility_count": 13,

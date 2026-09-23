@@ -2,7 +2,7 @@
 
 Deprecated reference material for new Claude Code integrations as of 2026-09-22.
 
-Private repository: [flightdeck-review-receipts](https://github.com/AdityaVikramDalmia/flightdeck-review-receipts) (authorized access required). Private candidate; Apache-2.0 licensed; public launch deferred.
+Repository: [flightdeck-review-receipts](https://github.com/AdityaVikramDalmia/flightdeck-review-receipts). Public reference implementation; Apache-2.0 licensed.
 
 ## Problem
 

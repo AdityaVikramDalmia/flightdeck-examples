@@ -12,7 +12,7 @@
     "network_access": false,
     "original_runtime_access": false,
     "live_ledgers_or_credentials_access": false,
-    "stratprime_access": false
+    "unrelated_private_project_access": false
   },
   "platform": {
     "system": "Darwin",

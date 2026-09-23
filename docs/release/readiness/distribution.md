@@ -33,7 +33,7 @@ JSONL/key/credential filenames, and vendored directories. No operational corpora
 ledgers, transcripts, credentials, or machine-specific runtime dependencies were
 identified in the inspected distribution. The three private-project-name hits in
 historical correctness-review documentation describe excluded scope; they do not
-contain that project's data and were preserved as historical evidence. This
+contain that project's data and were preserved as historical evidence (the name itself was redacted on 2026-09-23). This
 focused inventory does not prove absence of arbitrary private text.
 
 Several existing local checkouts contain ignored Python bytecode left by earlier

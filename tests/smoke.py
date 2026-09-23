@@ -22,8 +22,8 @@ TOOL_NAMES = ("gate-runner", "durable-mailbox", "session-ledger", "agent-file-gu
 class Smoke(unittest.TestCase):
     def test_catalog_and_documents(self):
         catalog = json.loads((ROOT / "catalog.json").read_text())
-        self.assertEqual(catalog["visibility"], "private")
-        self.assertFalse(catalog["public_availability_implied"])
+        self.assertEqual(catalog["visibility"], "public")
+        self.assertTrue(catalog["public_availability_implied"])
         cases = catalog["case_studies"]
         self.assertEqual(len({case["id"] for case in cases}), len(cases))
         self.assertEqual(set(TOOL_NAMES) | {"repo-health", "job-heartbeat", "config-baseline", "review-receipts", "decision-ledger"}, {case["id"] for case in cases})
@@ -36,11 +36,11 @@ class Smoke(unittest.TestCase):
         self.assertTrue((ROOT / "NOTICE").is_file())
         self.assertEqual(catalog["maintenance_status"], "deprecated")
         self.assertEqual(catalog["repository_count_including_companion"], len(cases) + 1)
-        self.assertEqual(catalog["release_status"], "private-candidate")
+        self.assertEqual(catalog["release_status"], "public-reference")
         self.assertTrue((ROOT / catalog["integration_demo"]).is_file())
         index = (ROOT / "docs/portfolio/README.md").read_text()
         for case in cases:
-            self.assertEqual(case["visibility"], "private")
+            self.assertEqual(case["visibility"], "public")
             self.assertEqual(case["repository"], "https://github.com/AdityaVikramDalmia/flightdeck-" + case["id"])
             document = ROOT / case["document"]
             self.assertTrue(document.is_file())

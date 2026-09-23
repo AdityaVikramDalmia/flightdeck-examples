@@ -1,10 +1,10 @@
 # Readiness and launch boundary
 
-Use the later [readiness directory](readiness/README.md) for the corrected manifest, validation, verdict, drafts and ordered launch procedure. The active task separately authorizes reviewed ordinary pushes to existing private remotes; public visibility and article enabling remain deferred.
+Use the later [readiness directory](readiness/README.md) for the corrected manifest, validation, verdict, drafts and ordered launch procedure. At the 2026-09-22 audit, the active task authorized only reviewed ordinary pushes to the then-private remotes; public visibility and article enabling were deferred.
 
-This candidate has documented setup, requirements, command/failure
+This repository has documented setup, requirements, command/failure
 contracts, synthetic tests, provenance, Apache-2.0 terms, and maintainer guidance.
-These are preparation artifacts, not a public release or a security certification.
+These were preparation artifacts for the public release, not a security certification.
 
 ## Attribution and dependencies
 
@@ -31,7 +31,7 @@ zero scanner findings is not proof that every kind of secret is detectable.
 
 Keep eleven component projects, thirteen tools, and this twelfth companion repository distinct. Synthetic demos must clean up only their own fixtures. Keep catalog, case studies, license status, deprecation, and exact validation revisions consistent.
 
-## Before a later public launch
+## Launch checklist
 
 Confirm the intended twelve-repository release set, current GitHub visibility,
 the reviewed commits, and no unreviewed changes since the receipts. Confirm any

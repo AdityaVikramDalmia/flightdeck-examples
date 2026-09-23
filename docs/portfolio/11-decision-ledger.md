@@ -2,7 +2,7 @@
 
 Deprecated reference material for new Claude Code integrations as of 2026-09-22.
 
-Private repository: [flightdeck-decision-ledger](https://github.com/AdityaVikramDalmia/flightdeck-decision-ledger) (authorized access required). Private candidate; Apache-2.0 licensed; public launch deferred.
+Repository: [flightdeck-decision-ledger](https://github.com/AdityaVikramDalmia/flightdeck-decision-ledger). Public reference implementation; Apache-2.0 licensed.
 
 ## Problem
 

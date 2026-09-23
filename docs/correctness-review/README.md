@@ -2,6 +2,8 @@
 
 Historical review snapshot retained. Later [fixes and independent release validation](../release/readiness/README.md) resolve C1/E1/E2 without relabelling the partial coverage recorded below.
 
+2026-09-23: an unrelated private project's name was redacted from three files in this review (`README.md`, `coordination/README.md` and a key in `revisions.json`); no finding changed.
+
 Reviewed on 2026-09-22. **Partial runtime coverage; three reproduced findings.**
 Source/contract review covered all twelve repositories: eleven standalone
 projects containing thirteen tools, plus this examples repository. All remain
@@ -40,5 +42,5 @@ without reproduced issues. The group coverage notes identify what remains open.
 
 Only this review directory is committed. There was no publishing, pushing,
 history rewriting/backdating, original Flightdeck runtime access, live ledger or
-credential access, or StratPrime access. The work was assembled in an isolated
+credential access, or access to any unrelated private project. The work was assembled in an isolated
 examples worktree; all eleven component sources were left unchanged.

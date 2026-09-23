@@ -1,7 +1,7 @@
 # Checkouts and prerequisites
 
-All remotes below are private and require authorization. Their URLs identify
-repositories, not public downloads. Use the short local names shown here so the
+All repositories below are public reference implementations, deprecated for new Claude
+Code integrations as of 2026-09-22. Use the short local names shown here so the
 examples can resolve sibling checkouts without installation:
 
 ```text
@@ -20,7 +20,7 @@ flightdeck-tools/
   decision-ledger/      # separate recipe
 ```
 
-| Local directory | Private repository |
+| Local directory | Repository |
 | --- | --- |
 | `flightdeck-examples` | [Companion examples](https://github.com/AdityaVikramDalmia/flightdeck-examples) |
 | `gate-runner` | [Gate Runner](https://github.com/AdityaVikramDalmia/flightdeck-gate-runner) |

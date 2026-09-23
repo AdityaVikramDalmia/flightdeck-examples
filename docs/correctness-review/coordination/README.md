@@ -26,5 +26,5 @@ run, no independent replay, and no completed fresh regression-suite run.
 All fixture operations used a freshly allocated temporary directory, explicit
 storage, a synthetic HOME, and Git configuration isolation. Temporary fixtures
 were removed by Python's `TemporaryDirectory` cleanup. No network calls, live
-ledgers, credentials, original Flightdeck runtime, StratPrime, pushes, or
+ledgers, credentials, original Flightdeck runtime, unrelated private projects, pushes, or
 publication were involved.
