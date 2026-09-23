@@ -22,12 +22,13 @@ def live_command(pid):
     return fields[1] if len(fields) == 2 and not fields[0].startswith("Z") else None
 
 
-def owned(command, attempt, gate_script, interpreter):
+def owned(command, attempt, gate_script, interpreters):
     # ps does not quote paths containing spaces. Compare the complete expected
     # invocation, not tokens reconstructed with shlex or a substring anywhere
     # in arbitrary diagnostic text. Gate Runner supplies two descriptor numbers.
-    prefix = " ".join((interpreter, str(gate_script), "_supervise", str(attempt)))
-    return re.fullmatch(re.escape(prefix) + r" [0-9]+ [0-9]+", command) is not None
+    invocation = " ".join((str(gate_script), "_supervise", str(attempt)))
+    return any(re.fullmatch(re.escape(interpreter + " " + invocation) + r" [0-9]+ [0-9]+", command)
+               for interpreter in interpreters if interpreter)
 
 
 def main():
@@ -36,11 +37,13 @@ def main():
                    Path(__file__).resolve().parents[2] / "gate-runner/gate_runner/cli.py").resolve()
     if not fixture.name.startswith("flightdeck-example."):
         raise SystemExit("refusing cleanup of an unexpected fixture")
-    # macOS framework Python re-execs into Python.app, so sys.executable can
-    # differ from its live command. Ask ps for this cleanup interpreter itself.
-    interpreter = (subprocess.check_output(
-        ["ps", "-ww", "-p", str(os.getpid()), "-o", "comm="], text=True).strip()
-        if sys.platform == "darwin" else sys.executable)
+    # Gate Runner starts its supervisor as [sys.executable, ...]. macOS framework
+    # Python re-execs into Python.app and rewrites that argv[0]; ps reports this
+    # process's own spelling. Accept either; the rest must still match exactly.
+    interpreters = {sys.executable}
+    if sys.platform == "darwin":
+        interpreters.add(subprocess.check_output(
+            ["ps", "-ww", "-p", str(os.getpid()), "-o", "comm="], text=True).strip())
     victims = []
     uncertain = False
     # Select PIDs from our own attempt records, never from a machine-wide ps
@@ -59,7 +62,7 @@ def main():
             command = live_command(pid)
             if command is None:
                 continue
-            if not owned(command, attempt, gate_script, interpreter):
+            if not owned(command, attempt, gate_script, interpreters):
                 uncertain = True
                 continue
             # Recheck immediately before signalling, including the recorded PID.

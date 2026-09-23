@@ -9,6 +9,7 @@ This changes no publication status and asserts no native feature equivalence.
 - [Validation and receipt interpretation](validation.md)
 - [Timestamped original-defect replay](baseline-reproduction.json)
 - [Timestamped fixed-revision host checks](host-validation.json)
+- [2026-09-23 cleanup interpreter-spelling fix](2026-09-23-interpreter-spelling.md)
 
 The [historical correctness review](../../correctness-review/README.md) and its
 original reproducer remain unchanged. New execution evidence belongs here and

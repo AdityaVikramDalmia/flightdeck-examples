@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import re
 import shlex
+import shutil
 import signal
 import subprocess
 import sys
@@ -205,6 +206,45 @@ class Smoke(unittest.TestCase):
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("retaining fixture", result.stderr)
             self.assertTrue(metadata.is_file())
+
+    def test_cleanup_reaps_supervisor_named_by_sys_executable(self):
+        # Gate Runner starts its supervisor as [sys.executable, ...]. A cleanup
+        # reached through a bare PATH name must still recognise that spelling.
+        with tempfile.TemporaryDirectory(prefix="example interpreter identity ") as temporary:
+            scratch = Path(temporary).resolve()
+            aliases = scratch / "alias bin"
+            aliases.mkdir()
+            (aliases / "fd-python").symlink_to(sys.executable)
+            env = {"PATH": str(aliases) + os.pathsep + os.environ["PATH"], "HOME": str(scratch),
+                   "LANG": "C", "PYTHONDONTWRITEBYTECODE": "1"}
+            interpreter = subprocess.check_output(["fd-python", "-c", "import sys; print(sys.executable)"],
+                                                  env=env, text=True).strip()
+            fixture = scratch / "flightdeck-example.interpreter"
+            attempt = fixture / "main project/.git/gate-runner/runs/fixture/attempts/one"
+            attempt.mkdir(parents=True)
+            gate_script = scratch / "gate runner/cli.py"
+            gate_script.parent.mkdir()
+            gate_script.write_text("trap 'kill \"$child\" 2>/dev/null; exit 0' TERM\n"
+                                   'sleep 30 & child=$!\n: > "$READY"\nwait "$child"\n')
+            ready = scratch / "supervisor.ready"
+            # Live command is exactly "<sys.executable> <gate script> _supervise <attempt> 3 4".
+            supervisor = subprocess.Popen([interpreter, str(gate_script), "_supervise", str(attempt), "3", "4"],
+                                          executable=shutil.which("bash"), env=dict(env, READY=str(ready)),
+                                          stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            try:
+                deadline = time.monotonic() + 5
+                while not ready.exists():
+                    self.assertLess(time.monotonic(), deadline, "synthetic supervisor did not start")
+                    time.sleep(0.01)
+                (attempt / "meta.json").write_text(json.dumps({"supervisor_pid": supervisor.pid}))
+                result = subprocess.run(["fd-python", str(ROOT / "examples/cleanup-gate.py"), str(fixture), str(gate_script)],
+                                        env=env, text=True, capture_output=True, timeout=15)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                self.assertEqual(supervisor.wait(timeout=5), 0)
+            finally:
+                if supervisor.poll() is None:
+                    supervisor.terminate()
+                    supervisor.wait(timeout=5)
 
     def test_interruption_reaps_detached_gate(self):
         with tempfile.TemporaryDirectory(prefix="example signal ") as temporary:
