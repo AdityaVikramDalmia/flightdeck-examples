@@ -1,8 +1,25 @@
 # Checkouts and prerequisites
 
 All repositories below are public reference implementations, deprecated for new Claude
-Code integrations as of 2026-09-22. Use the short local names shown here so the
-examples can resolve sibling checkouts without installation:
+Code integrations as of 2026-09-22. The examples resolve sibling checkouts by the
+short local names shown here, without installation.
+
+## Clone all eleven tool repositories
+
+From the companion checkout, [`scripts/clone-all.sh`](../../scripts/clone-all.sh)
+clones every missing tool repository under its short name:
+
+```sh
+scripts/clone-all.sh                           # into this checkout's parent directory
+scripts/clone-all.sh /path/to/tool-checkouts   # or into another directory
+```
+
+It only clones what is missing, so it is safe to run again. It never modifies an
+existing directory: one whose `origin` differs from the expected remote, or that is
+not a Git checkout, is reported on stderr and skipped. It exits 0 when every
+directory is present, 1 if a clone failed, and 2 on a usage error.
+
+## Manual layout
 
 ```text
 flightdeck-tools/

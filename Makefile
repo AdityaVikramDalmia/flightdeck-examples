@@ -1,6 +1,7 @@
 .PHONY: test smoke demo
 
 test:
+	@python3 tests/clone_all.py
 	@bash tests/smoke.sh
 
 smoke: test
