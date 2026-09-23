@@ -1,5 +1,7 @@
 # Independent release audit, 2026-09-22
 
+2026-09-23: present-tense status lines in this folder were re-dated ("At the 2026-09-22 audit …"), and private deployment details and an unrelated project's name were removed from the tree; no finding changed.
+
 This directory records a bounded release-readiness audit of eleven component
 repositories exposing thirteen utilities, plus the twelfth examples repository.
 At the audit all were private Apache-2.0 reference artifacts, deprecated for new Claude Code

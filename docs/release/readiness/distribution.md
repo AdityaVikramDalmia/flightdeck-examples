@@ -21,11 +21,11 @@ utilities. No third-party code tree requiring an additional bundled notice was
 identified. External executables retain their own licenses. The local Alpine
 validation image is a test environment and is not shipped by these repositories.
 
-README banners, release indexes, repository instructions, maintainer skills,
-examples catalog, and companion status all retain private/deferred/deprecated
-positioning. GitHub URLs are collaborator identifiers rather than public download
-claims. The maintainer decision does not assert that native Claude Code features
-replace every utility.
+At the 2026-09-22 audit, README banners, release indexes, repository instructions,
+maintainer skills, examples catalog, and companion status all retained
+private/deferred/deprecated positioning, and GitHub URLs were collaborator
+identifiers rather than public download claims. The maintainer decision does not
+assert that native Claude Code features replace every utility.
 
 The [tracked-file audit](distribution-audit.json) looked for personal absolute
 paths, private network endpoints, private-project references, runtime database or
