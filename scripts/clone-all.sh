@@ -24,6 +24,8 @@ parent=${1:-$(dirname "$checkout")}
 base=${FLIGHTDECK_CLONE_BASE:-https://github.com/AdityaVikramDalmia/}
 base=${base%/}
 unset GIT_DIR GIT_WORK_TREE
+# Fail fast instead of prompting when a repository is missing or private.
+export GIT_TERMINAL_PROMPT=0
 
 status=0
 for name in gate-runner durable-mailbox session-ledger agent-file-guards worktree-guard shell-lock \
